@@ -1,0 +1,51 @@
+ext.versions = [
+        name              : '1.0',
+        minSdk            : 16,
+        targetSdk         : 23,
+        compileSdk        : 23,
+        buildTools        : '23.0.2',
+
+        // android
+        supportLibs       : '23.4.0',
+
+        // 3rd
+        wire              : '2.1.2',
+        dagger            : '2.4',
+        javaxAnnotations  : '1.2',
+        androidAnnotations: '4.0.0',
+        rxJava            : '1.1.8',
+        rxAndroid         : '1.2.0',
+        retrofit          : '2.0.2',
+        okHttp            : '3.2.0',
+        realm             : '1.1.1',
+        gson              : '2.6.2',
+        materialDialog    : '0.8.5.9@aar',
+        robotoTextView    : '2.5.0'
+]
+
+ext.libraries = [
+
+        // android
+        supportAnnotations      : "com.android.support:support-annotations:$versions.supportLibs",
+        supportAppCompat        : "com.android.support:appcompat-v7:$versions.supportLibs",
+        supportDesign           : "com.android.support:design:$versions.supportLibs",
+        supportRecyclerView     : "com.android.support:recyclerview-v7:$versions.supportLibs",
+
+        // 3rd
+        realm                   : "io.realm:realm-gradle-plugin:$versions.realm",
+        wire                    : "com.squareup.wire:wire-runtime:$versions.wire",
+        dagger                  : "com.google.dagger:dagger:$versions.dagger",
+        daggerCompiler          : "com.google.dagger:dagger-compiler:$versions.dagger",
+        javaxAnnotations        : "javax.annotation:javax.annotation-api:$versions.javaxAnnotations",
+        androidAnnotations      : "org.androidannotations:androidannotations:$versions.androidAnnotations",
+        androidAnnotationsApi   : "org.androidannotations:androidannotations-api:$versions.androidAnnotations",
+        rxJava                  : "io.reactivex:rxjava:$versions.rxJava",
+        rxAndroid               : "io.reactivex:rxandroid:$versions.rxAndroid",
+        okHttp                  : "com.squareup.okhttp3:okhttp:$versions.okHttp",
+        okHttpLoggingInterceptor: "com.squareup.okhttp3:logging-interceptor:$versions.okHttp",
+        retrofit                : "com.squareup.retrofit2:retrofit:$versions.retrofit",
+        retrofitGsonConverter   : "com.squareup.retrofit2:converter-gson:$versions.retrofit",
+        retrofitRxJavaAdapter   : "com.squareup.retrofit2:adapter-rxjava:$versions.retrofit",
+        materialDialog          : "com.afollestad.material-dialogs:core:$versions.materialDialog",
+        robotoTextView          : "com.github.johnkil.android-robototextview:robototextview:$versions.robotoTextView"
+]
