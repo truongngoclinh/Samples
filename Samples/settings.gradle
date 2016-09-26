@@ -1,1 +1,1 @@
-include ':app', ':ui_reactive_rxjava_realm', ':base'
+include ':app', ':base', ':utils'

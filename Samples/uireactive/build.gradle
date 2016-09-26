@@ -1,4 +1,4 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 apply plugin: 'android-apt'
 
 android {
@@ -6,12 +6,10 @@ android {
     buildToolsVersion versions.buildTools
 
     defaultConfig {
-        applicationId "samples.linhtruong.com.app"
         minSdkVersion versions.minSdk
         targetSdkVersion versions.targetSdk
         versionCode versions.code
         versionName versions.name
-
     }
 
     buildTypes {
@@ -20,26 +18,14 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-
-    dexOptions {
-        // added for instant-run optimization
-        maxProcessCount 4
-        javaMaxHeapSize "2g"
-    }
 }
 
 dependencies {
     compile project(path: ':base')
-    compile project(path: ':utils')
 
     compile libraries.supportAppCompat
 
+    compile libraries.rxJava
     apt libraries.androidAnnotations
     compile libraries.androidAnnotationsApi
-
-    apt libraries.daggerCompiler
-    compile libraries.dagger
-
-    compile libraries.rxJava
-    compile libraries.rxAndroid
 }

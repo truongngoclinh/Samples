@@ -1,4 +1,5 @@
 ext.versions = [
+        code              : 1,
         name              : '1.0',
         minSdk            : 16,
         targetSdk         : 23,
@@ -12,7 +13,7 @@ ext.versions = [
         wire              : '2.1.2',
         dagger            : '2.4',
         javaxAnnotations  : '1.2',
-        androidAnnotations: '4.0.0',
+        androidAnnotations: '4.1.0',
         rxJava            : '1.1.8',
         rxAndroid         : '1.2.0',
         retrofit          : '2.0.2',
