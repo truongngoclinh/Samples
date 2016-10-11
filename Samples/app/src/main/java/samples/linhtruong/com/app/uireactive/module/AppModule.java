@@ -7,10 +7,10 @@ import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;
+import samples.linhtruong.com.app.uireactive.manager.ResManager;
+import samples.linhtruong.com.app.uireactive.manager.RxDbManager;
 import samples.linhtruong.com.app.uireactive.task.TaskManager;
-import samples.linhtruong.com.base.manager.DbManager;
-import samples.linhtruong.com.base.manager.ResManager;
-import samples.linhtruong.com.base.task.TaskResource;
+import samples.linhtruong.com.app.uireactive.task.TaskResource;
 
 /**
  * Created by Truong on 9/26/16 - 17:28.
@@ -34,8 +34,8 @@ public class AppModule {
 
     @Provides
     @Singleton
-    DbManager provideDbManager() {
-        return new DbManager(mApplication);
+    RxDbManager provideDbManager() {
+        return new RxDbManager(mApplication);
     }
 
     @Provides

@@ -7,7 +7,6 @@ import rx.Subscription;
 import rx.functions.Action0;
 import rx.functions.Func0;
 import samples.linhtruong.com.app.uireactive.data.DataObserver;
-import samples.linhtruong.com.base.task.TaskResource;
 import samples.linhtruong.com.utils.LogUtils;
 
 /**

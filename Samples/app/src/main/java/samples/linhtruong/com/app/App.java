@@ -23,5 +23,6 @@ public class App extends BaseApplication {
         setComponent(component);
 
         component.inject(component.getTaskResource());
+        component.inject(component.getTaskManager());
     }
 }

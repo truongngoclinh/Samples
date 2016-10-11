@@ -40,6 +40,8 @@ dependencies {
     apt libraries.daggerCompiler
     compile libraries.dagger
 
+    compile libraries.okHttp
     compile libraries.rxJava
     compile libraries.rxAndroid
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha8'
 }
