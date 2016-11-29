@@ -11,3 +11,4 @@ Samples/app/src/main/java/samples/linhtruong/com/app/uireactive
 - [ ] Memory leak
 - [ ] Java Generic
 - [ ] Draw simple shape, simple custom View
+- [ ] String Regex
