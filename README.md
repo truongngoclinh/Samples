@@ -10,7 +10,7 @@
 
 - ####[ ] WebView, deeplink, WebViewClient, WebChromeClient, WebJsBridge
 
-- ####[ ] 8Drawer, Navigation View
+- ####[ ] Drawer, Navigation View, Navigator
 
 - ####[ ] Spannable String, TextInputLayout, ColorStateListDrawable
 
