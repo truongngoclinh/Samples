@@ -3,22 +3,22 @@
   + *path:* Samples/app/src/main/java/samples/linhtruong/com/app/tabs
   + *References:* [Androidhive] (http://www.androidhive.info/2015/09/android-material-design-working-with-tabs/)
 
-- ####[ ] **UI-Reactive with RxJava**
+- ####[ ] UI-Reactive with RxJava
   + *path:* Samples/app/src/main/java/samples/linhtruong/com/app/uireactive
 
-- ####[ ] **Memory cache (LRU cache), disk cache, ContentProvider cache**
+- ####[ ] Memory cache (LRU cache), disk cache, ContentProvider cache
 
-- ####[ ] **WebView, deeplink, WebViewClient, WebChromeClient, WebJsBridge**
+- ####[ ] WebView, deeplink, WebViewClient, WebChromeClient, WebJsBridge
 
-- ####[ ] **8Drawer, Navigation View**
+- ####[ ] 8Drawer, Navigation View
 
-- ####[ ] **Spannable String, TextInputLayout, ColorStateListDrawable**
+- ####[ ] Spannable String, TextInputLayout, ColorStateListDrawable
 
-- ####[ ] **Memory leak**
+- ####[ ] Memory leak
 
-- ####[ ] **Java Generic**
+- ####[ ] Java Generic
 
-- ####[ ] **Draw simple shape, simple custom View**
+- ####[ ] Draw simple shape, simple custom View
 
-- ####[ ] **String Regex**
+- ####[ ] String Regex
 
