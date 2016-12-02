@@ -1,5 +1,5 @@
 # Samples
-- [x] Tabs layout
+- [x] ~~Tabs layout~~
 ```ruby
 Samples/app/src/main/java/samples/linhtruong/com/app/tabs
 ```
