@@ -1,4 +1,4 @@
-package samples.linhtruong.com.app.rxtest;
+package samples.linhtruong.com.app.freetest.rxtest;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
@@ -10,11 +10,9 @@ import android.widget.TextView;
 import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ViewById;
-import org.w3c.dom.ls.LSOutput;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStream;
 
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -46,7 +44,7 @@ public class TestRxDownloadFileActivity extends Activity {
     @ViewById(R.id.text)
     protected TextView mText;
 
-    @Click(R.id.btnTest)
+    @Click(R.id.btnPushEvent)
     void OnClickBtnTest() {
 //        new STask(this).execute();
 //        asynchronousCall();

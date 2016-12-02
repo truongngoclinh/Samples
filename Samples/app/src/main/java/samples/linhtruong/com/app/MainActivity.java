@@ -3,10 +3,14 @@ package samples.linhtruong.com.app;
 import android.os.Bundle;
 
 import android.support.annotation.Nullable;
+
 import org.androidannotations.annotations.EActivity;
+
 import javax.inject.Inject;
 
-import samples.linhtruong.com.app.rxtest.TestRxDownloadFileActivity_;
+import samples.linhtruong.com.app.tabs.TabHostActivity;
+import samples.linhtruong.com.app.tabs.TabHostActivity_;
+import samples.linhtruong.com.app.tabs.TabPagerActivity_;
 import samples.linhtruong.com.app.uireactive.data.DataObserver;
 import samples.linhtruong.com.app.uireactive.task.BaseTask;
 import samples.linhtruong.com.app.uireactive.task.TaskExecutable;
@@ -30,7 +34,10 @@ public class MainActivity extends BaseActivity implements TaskExecutable {
 //        RxActivity_.intent(this).start();
 //        RxTestActivity_.intent(this).start();
 //        SOTestActivity_.intent(this).start();
-        TestRxDownloadFileActivity_.intent(this).start();
+//        TestRxDownloadFileActivity_.intent(this).start();
+//        TestRxComponentsActivity_.intent(this).start();
+//        TabHostActivity_.intent(this).start();
+        TabPagerActivity_.intent(this).start();
     }
 
     @Override

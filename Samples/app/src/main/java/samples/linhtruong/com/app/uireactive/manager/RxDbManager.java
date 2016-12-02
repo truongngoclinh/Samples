@@ -21,7 +21,7 @@ import samples.linhtruong.com.base.database.task.QueryTask;
  * + observe db transaction then notify to all subsriber about changes
  * + the subscriber is the db task, normally this task is reponsiblity for getting data then update UI.
  * We device db transaction into 2 types:
- * + update task (add, delete also): return nothing but will fire notifies to the task UI relevant task
+ * + update task (add, delete also): return nothing but will fire notifies to UI relevant task
  * + query task (query for data, not update anything):  normally return realm object
  */
 

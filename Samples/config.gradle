@@ -7,7 +7,7 @@ ext.versions = [
         buildTools        : '23.0.2',
 
         // android
-        supportLibs       : '23.4.0',
+        supportLibs       : '24.2.1',
 
         // 3rd
         wire              : '2.1.2',
