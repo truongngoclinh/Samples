@@ -1,6 +1,5 @@
 # Samples
-- [x] [Tabs layout] (https://github.com/truongngoclinh/BaseApplicationForm)
-- [ ] UI-Reactive with RxJava
+- [x] Tabs layout
 ```ruby
 Samples/app/src/main/java/samples/linhtruong/com/app/uireactive
 ```
