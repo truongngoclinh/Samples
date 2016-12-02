@@ -1,6 +1,6 @@
 # Samples
 - [x] Tabs layout
-```java
+```ruby
 Samples/app/src/main/java/samples/linhtruong/com/app/tabs
 ```
 - [ ] UI-Reactive with RxJava
