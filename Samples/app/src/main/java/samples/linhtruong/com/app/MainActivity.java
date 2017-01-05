@@ -8,6 +8,7 @@ import org.androidannotations.annotations.EActivity;
 
 import javax.inject.Inject;
 
+import samples.linhtruong.com.app.facebook.FacebookShareActivity_;
 import samples.linhtruong.com.app.tabs.TabHostActivity;
 import samples.linhtruong.com.app.tabs.TabHostActivity_;
 import samples.linhtruong.com.app.tabs.TabPagerActivity_;
@@ -37,7 +38,8 @@ public class MainActivity extends BaseActivity implements TaskExecutable {
 //        TestRxDownloadFileActivity_.intent(this).start();
 //        TestRxComponentsActivity_.intent(this).start();
 //        TabHostActivity_.intent(this).start();
-        TabPagerActivity_.intent(this).start();
+//        TabPagerActivity_.intent(this).start();
+        FacebookShareActivity_.intent(this).start();
     }
 
     @Override
@@ -50,6 +52,6 @@ public class MainActivity extends BaseActivity implements TaskExecutable {
     }
 
     private void injectToAppComponent() {
-        ((BaseApplication) getApplication()).mBaseComponent.inject(this);
+        ((BaseApplication) getApplication()).getBaseComponent().inject(this);
     }
 }

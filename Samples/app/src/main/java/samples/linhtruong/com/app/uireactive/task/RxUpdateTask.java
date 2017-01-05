@@ -11,7 +11,7 @@ import samples.linhtruong.com.utils.LogUtils;
 /**
  * Created by Truong on 9/27/16 - 10:56.
  * Description: creating subject pool to connect between subscriber and update observable
- * then notify the change after db transaction commited from update observable to subsriber
+ * then notify the change after db transaction committed from update observable to subscriber
  */
 
 public abstract class RxUpdateTask<T> extends UpdateTask<T> {

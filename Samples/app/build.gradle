@@ -45,5 +45,7 @@ dependencies {
     compile libraries.okHttp
     compile libraries.rxJava
     compile libraries.rxAndroid
-    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha8'
+    compile libraries.retrofit
+    compile libraries.retrofitGsonConverter
+    compile libraries.facebook
 }

@@ -1,8 +1,10 @@
 package samples.linhtruong.com.app;
 
+import android.app.Application;
+
+import samples.linhtruong.com.app.uireactive.component.RxComponent;
+import samples.linhtruong.com.app.uireactive.module.RxModule;
 import samples.linhtruong.com.base.BaseApplication;
-import samples.linhtruong.com.app.uireactive.component.AppComponent;
-import samples.linhtruong.com.app.uireactive.module.AppModule;
 
 /**
  * Created by Truong on 9/26/16 - 17:41.
@@ -19,10 +21,10 @@ public class App extends BaseApplication {
     }
 
     private void initDependencies() {
-        AppComponent component = AppComponent.Initializer.init(new AppModule(this));
-        setComponent(component);
+        RxComponent rxComponent = RxComponent.Initializer.init(new RxModule(this), new AppModule(this));
+        setComponent(rxComponent);
 
-        component.inject(component.getTaskResource());
-        component.inject(component.getTaskManager());
+        rxComponent.inject(rxComponent.getTaskResource());
+        rxComponent.inject(rxComponent.getTaskManager());
     }
 }

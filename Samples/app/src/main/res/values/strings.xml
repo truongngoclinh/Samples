@@ -1,4 +1,5 @@
 <resources>
+    <string name="fb_app_id">707190462774295</string>
     <string name="app_name">Samples</string>
     <string name="scrollText">test\n\n\n\n\n\n\n\\n\n\n\n\n\n\nn\\n\n\n\n\n\n\n\n\n\n\n\\n\n\n\n\n\n\n\n</string>
 </resources>

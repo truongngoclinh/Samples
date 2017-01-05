@@ -11,6 +11,7 @@ import samples.linhtruong.com.app.uireactive.manager.ResManager;
 import samples.linhtruong.com.app.uireactive.manager.RxDbManager;
 import samples.linhtruong.com.app.uireactive.task.TaskManager;
 import samples.linhtruong.com.app.uireactive.task.TaskResource;
+import samples.linhtruong.com.utils.ScreenUtils;
 
 /**
  * Created by Truong on 9/26/16 - 17:28.
@@ -18,18 +19,12 @@ import samples.linhtruong.com.app.uireactive.task.TaskResource;
  */
 
 @Module
-public class AppModule {
+public class RxModule {
 
     private final Application mApplication;
 
-    public AppModule(Application application) {
+    public RxModule(Application application) {
         mApplication = application;
-    }
-
-    @Provides
-    @Singleton
-    Context provideApplicationContext() {
-        return mApplication;
     }
 
     @Provides
