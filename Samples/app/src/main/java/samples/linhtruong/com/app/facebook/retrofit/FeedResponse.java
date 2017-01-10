@@ -10,9 +10,17 @@ import com.google.gson.annotations.SerializedName;
  * @organization VED
  */
 
-public class ApiResponse {
+public class FeedResponse {
 
-    @SerializedName("test")
-    String testField;
+    @SerializedName("id")
+    String postId;
 
+    @SerializedName("error")
+    Error error;
+
+    public class Error {
+
+        @SerializedName("message")
+        String message;
+    }
 }
