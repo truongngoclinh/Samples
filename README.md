@@ -5,6 +5,9 @@
 
 - ####[ ] UI-Reactive with RxJava
   + `path: Samples/app/src/main/java/samples/linhtruong/com/app/uireactive`
+  
+- ####[x] Integrate Facebook: FacebookSdk, Graph API
+  + `path: Samples/app/src/main/java/samples/linhtruong/com/app/facebook`
 
 - ####[ ] Memory cache (LRU cache), disk cache, ContentProvider cache
 
