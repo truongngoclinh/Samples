@@ -8,6 +8,7 @@
   
 - ####[x] Integrate Facebook: FacebookSdk, Graph API
   + `path: Samples/app/src/main/java/samples/linhtruong/com/app/facebook`
+  + `References:`[`FacebookSDK`] (https://developers.facebook.com/docs/android/)
 
 - ####[ ] Memory cache (LRU cache), disk cache, ContentProvider cache
 
