@@ -2,10 +2,13 @@ package samples.linhtruong.com.app.facebook;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 
 import com.facebook.FacebookSdk;
@@ -74,11 +77,11 @@ public class FacebookShareActivity extends BaseActivity {
 
         ShareLinkContent shareLinkContent = new ShareLinkContent.Builder().setContentUrl(Uri.parse("https://developers.facebook.com")).build();
 
-        SharePhotoContent sharePhotoContent = new SharePhotoContent.Builder()
+        /*SharePhotoContent sharePhotoContent = new SharePhotoContent.Builder()
                 .addPhoto(sharePhoto)
-                .build();
+                .build();*/
 
-        ShareDialog.show(this, sharePhotoContent);
+        ShareDialog.show(this, shareLinkContent);
     }
 
     @Click(R.id.btn_share_iframe)
@@ -119,5 +122,17 @@ public class FacebookShareActivity extends BaseActivity {
         } else {
             return null;
         }
+    }
+
+    private Bitmap screenShotBitmap(View view) {
+        view.setDrawingCacheEnabled(true);
+        Bitmap b = Bitmap.createBitmap(view.getWidth(), view.getHeight(), Bitmap.Config.ARGB_8888);
+        Canvas c = new Canvas(b);
+        c.drawColor(Color.WHITE);
+        view.layout(0, 0, view.getWidth(), view.getHeight());
+        view.draw(c);
+        view.setDrawingCacheEnabled(false);
+
+        return b;
     }
 }
