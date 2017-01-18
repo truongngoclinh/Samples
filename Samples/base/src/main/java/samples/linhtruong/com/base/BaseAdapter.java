@@ -15,7 +15,7 @@ import java.util.List;
  * @organization VED
  */
 
-public abstract class BaseRecyclerViewAdapter<MODEL, HOLDER extends BaseRecyclerViewAdapter.BaseRecyclerViewHolder> extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+public abstract class BaseAdapter<MODEL, HOLDER extends BaseAdapter.ViewHolder> extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     protected List<MODEL> mData = new ArrayList<>();
 
@@ -27,7 +27,7 @@ public abstract class BaseRecyclerViewAdapter<MODEL, HOLDER extends BaseRecycler
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         MODEL data = mData.get(position);
-        ((BaseRecyclerViewHolder) holder).bindData(data);
+        ((ViewHolder) holder).bindData(data);
     }
 
     @Override
@@ -46,9 +46,9 @@ public abstract class BaseRecyclerViewAdapter<MODEL, HOLDER extends BaseRecycler
 
     public abstract HOLDER createHolder(ViewGroup parent, int viewType);
 
-    public abstract class BaseRecyclerViewHolder<MODEL> extends RecyclerView.ViewHolder {
+    public static abstract class ViewHolder<MODEL> extends RecyclerView.ViewHolder {
 
-        public BaseRecyclerViewHolder(View itemView) {
+        public ViewHolder(View itemView) {
             super(itemView);
         }
 

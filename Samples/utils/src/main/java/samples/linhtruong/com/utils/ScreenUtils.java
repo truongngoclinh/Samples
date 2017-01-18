@@ -24,6 +24,7 @@ public class ScreenUtils {
 
     public static void init(Context context) {
         DisplayMetrics metrics = context.getResources().getDisplayMetrics();
+        DENSITY = metrics.density;
         SCREEN_HEIGHT = metrics.heightPixels;
         SCREEN_WIDTH = metrics.widthPixels;
 

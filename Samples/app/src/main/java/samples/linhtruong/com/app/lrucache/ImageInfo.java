@@ -9,4 +9,17 @@ package samples.linhtruong.com.app.lrucache;
  */
 
 public class ImageInfo {
+
+    private ImageInfo() {
+
+    }
+
+    public String url;
+
+    public static ImageInfo create(String url) {
+        ImageInfo imageInfo = new ImageInfo();
+        imageInfo.url = url;
+
+        return imageInfo;
+    }
 }

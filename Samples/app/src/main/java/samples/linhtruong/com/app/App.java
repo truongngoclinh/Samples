@@ -5,6 +5,7 @@ import android.app.Application;
 import samples.linhtruong.com.app.uireactive.component.RxComponent;
 import samples.linhtruong.com.app.uireactive.module.RxModule;
 import samples.linhtruong.com.base.BaseApplication;
+import samples.linhtruong.com.utils.ScreenUtils;
 
 /**
  * Created by Truong on 9/26/16 - 17:41.
@@ -18,6 +19,7 @@ public class App extends BaseApplication {
         super.onCreate();
 
         initDependencies();
+        initUtils();
     }
 
     private void initDependencies() {
@@ -26,5 +28,9 @@ public class App extends BaseApplication {
 
         rxComponent.inject(rxComponent.getTaskResource());
         rxComponent.inject(rxComponent.getTaskManager());
+    }
+
+    private void initUtils() {
+        ScreenUtils.init(this);
     }
 }

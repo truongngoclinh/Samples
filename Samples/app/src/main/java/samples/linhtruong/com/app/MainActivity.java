@@ -16,7 +16,6 @@ import samples.linhtruong.com.app.freetest.rxtest.TestRxActivity_;
 import samples.linhtruong.com.app.freetest.rxtest.TestRxComponentsActivity_;
 import samples.linhtruong.com.app.freetest.rxtest.TestRxDownloadFileActivity_;
 import samples.linhtruong.com.app.lrucache.LruCacheTestActivity_;
-import samples.linhtruong.com.app.tabs.TabHostActivity;
 import samples.linhtruong.com.app.tabs.TabHostActivity_;
 import samples.linhtruong.com.app.tabs.TabPagerActivity_;
 import samples.linhtruong.com.app.uireactive.RxActivity_;
@@ -38,6 +37,7 @@ public class MainActivity extends BaseActivity implements TaskExecutable {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        initLayout(this);
         injectToAppComponent();
     }
 
@@ -55,13 +55,6 @@ public class MainActivity extends BaseActivity implements TaskExecutable {
     }
 
     private void initLayout(final Activity activity) {
-
-        SOTestActivity_.intent(this).start();
-        TestRxDownloadFileActivity_.intent(this).start();
-        TestRxComponentsActivity_.intent(this).start();
-        TabHostActivity_.intent(this).start();
-        TabPagerActivity_.intent(this).start();
-        FacebookShareActivity_.intent(this).start();
         findViewById(R.id.rxActivity).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
