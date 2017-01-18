@@ -1,4 +1,4 @@
-# Samples
+# ANDROID - Samples
 - ####[x] Tabs layout
   + `path: Samples/app/src/main/java/samples/linhtruong/com/app/tabs`
   + `References:`[`Androidhive`] (http://www.androidhive.info/2015/09/android-material-design-working-with-tabs/)
@@ -11,6 +11,7 @@
   + `References:`[`FacebookSDK`] (https://developers.facebook.com/docs/android/)
 
 - ####[ ] Memory cache (LRU cache), disk cache, ContentProvider cache
+  + `LRU cache: Samples/app/src/main/java/samples/linhtruong/com/app/lrucache`
 
 - ####[ ] WebView, deeplink, WebViewClient, WebChromeClient, WebJsBridge
 
