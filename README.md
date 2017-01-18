@@ -11,6 +11,7 @@
   + `References:`[`FacebookSDK`] (https://developers.facebook.com/docs/android/)
 
 - ####[ ] Memory cache (LRU cache), disk cache, ContentProvider cache
+  + `LRU cache: Samples/app/src/main/java/samples/linhtruong/com/app/lrucache`
 
 - ####[ ] WebView, deeplink, WebViewClient, WebChromeClient, WebJsBridge
 
