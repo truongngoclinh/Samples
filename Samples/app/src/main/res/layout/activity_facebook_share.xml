@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/share_content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp">
 
     <Button
-        android:id="@+id/btn_share"
+        android:id="@+id/btn_share_dialog"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:text="Share with native app"
         android:textAllCaps="false" />
 
     <Button
-        android:id="@+id/btn_share_iframe"
+        android:id="@+id/btn_share_api"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"

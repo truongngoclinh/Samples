@@ -67,6 +67,10 @@ public class LruCacheTestActivity extends BaseActivity {
         data.add(ImageInfo.create("https://images4.alphacoders.com/342/34254.png"));
         data.add(ImageInfo.create("https://images5.alphacoders.com/296/thumb-1920-296165.jpg"));
         data.add(ImageInfo.create("http://cdn.wonderfulengineering.com/wp-content/uploads/2016/01/love-wallpaper-610x343.jpg"));
+        data.add(ImageInfo.create("http://7606-presscdn-0-74.pagely.netdna-cdn.com/wp-content/uploads/2016/03/Dubai-Photos-Images-Dubai-Fountain-Image-800x600.jpg"));
+        data.add(ImageInfo.create("https://www.smashingmagazine.com/wp-content/uploads/2016/01/07-responsive-image-example-castle-7-opt.jpg"));
+        data.add(ImageInfo.create("http://demo.qodeinteractive.com/passage/wp-content/uploads/2013/07/revolution-05-center.jpg"));
+        data.add(ImageInfo.create("http://7-themes.com/data_images/out/14/6817014-image.jpg"));
 
         mAdapter.setData(data);
     }
