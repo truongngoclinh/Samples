@@ -1,5 +1,5 @@
 # ANDROID - Samples
-- ####[] Eventbus System
+- ####[] Notification system: custom EventBus
   + `path`:
   
 - ####[] App state manager
