@@ -1,6 +1,6 @@
 # ANDROID - Samples
-- ####[ ] Notification system: custom EventBus
-  + `path`:
+- ####[x] Notification system: custom EventBus
+  + `path: Samples/app/src/main/java/samples/linhtruong/com/app/eventbus`
   
 - ####[ ] App state manager
   + `path:`
