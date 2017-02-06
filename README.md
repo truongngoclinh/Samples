@@ -1,8 +1,8 @@
 # ANDROID - Samples
-- ####[] Notification system: custom EventBus
+- ####[ ] Notification system: custom EventBus
   + `path`:
   
-- ####[] App state manager
+- ####[ ] App state manager
   + `path:`
 
 - ####[x] Tabs layout
