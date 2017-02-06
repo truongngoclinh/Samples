@@ -1,4 +1,10 @@
 # ANDROID - Samples
+- ####[x] Notification system: custom EventBus
+  + `path: Samples/app/src/main/java/samples/linhtruong/com/app/eventbus`
+  
+- ####[ ] App state manager
+  + `path:`
+
 - ####[x] Tabs layout
   + `path: Samples/app/src/main/java/samples/linhtruong/com/app/tabs`
   + `References:`[`Androidhive`] (http://www.androidhive.info/2015/09/android-material-design-working-with-tabs/)
