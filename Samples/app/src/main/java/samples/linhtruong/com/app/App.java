@@ -1,10 +1,10 @@
 package samples.linhtruong.com.app;
 
-import android.app.Application;
-
+import samples.linhtruong.com.app.eventbus.EventBus;
 import samples.linhtruong.com.app.uireactive.component.RxComponent;
 import samples.linhtruong.com.app.uireactive.module.RxModule;
 import samples.linhtruong.com.base.BaseApplication;
+import samples.linhtruong.com.base.loop.MainUILoop;
 import samples.linhtruong.com.utils.ScreenUtils;
 
 /**
@@ -20,6 +20,7 @@ public class App extends BaseApplication {
 
         initDependencies();
         initUtils();
+        initSingleton();
     }
 
     private void initDependencies() {
@@ -32,5 +33,9 @@ public class App extends BaseApplication {
 
     private void initUtils() {
         ScreenUtils.init(this);
+    }
+
+    private void initSingleton() {
+        MainUILoop.getInstance().init();
     }
 }

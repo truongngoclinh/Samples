@@ -59,4 +59,10 @@
         android:layout_height="wrap_content"
         android:text="LRUCacheActivity" />
 
+    <Button
+        android:id="@+id/eventBusDemo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EventBus" />
+
 </LinearLayout>

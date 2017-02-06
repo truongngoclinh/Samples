@@ -65,8 +65,12 @@ public class LogUtils {
         print(kind, E, e);
     }
 
-    private static void print(int kind, int type, Object... values) {
+    public static void e(String e) {
+        int kind = OTHERS;
+        print(kind, E, e);
+    }
 
+    private static void print(int kind, int type, Object... values) {
         LogInfo info = null;
         String value = "";
 

@@ -54,6 +54,9 @@
         <activity
             android:name=".lrucache.FullScreenImageActivity_"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".eventbus.TestNotificationAtivity_"
+            android:screenOrientation="portrait" />
 
         <activity
             android:name="com.facebook.FacebookActivity"

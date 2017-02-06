@@ -10,6 +10,7 @@ import org.androidannotations.annotations.EActivity;
 
 import javax.inject.Inject;
 
+import samples.linhtruong.com.app.eventbus.TestNotificationAtivity_;
 import samples.linhtruong.com.app.facebook.FacebookShareActivity_;
 import samples.linhtruong.com.app.freetest.SOTestActivity_;
 import samples.linhtruong.com.app.freetest.rxtest.TestRxActivity_;
@@ -108,6 +109,13 @@ public class MainActivity extends BaseActivity implements TaskExecutable {
             @Override
             public void onClick(View view) {
                 LruCacheTestActivity_.intent(activity).start();
+            }
+        });
+
+        findViewById(R.id.eventBusDemo).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                TestNotificationAtivity_.intent(activity).start();
             }
         });
     }
