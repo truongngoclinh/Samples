@@ -32,7 +32,7 @@
 - ####[ ] Draw simple shape, simple custom View
 
 - ####[x] String Regex
-  + `path: Samples/app/src/main/java/samples/linhtruong/com/app/test/TestRegexActivity` 
-  + `ref: http://www.vogella.com/tutorials/JavaRegularExpressions/article.html`
+  + `path: Samples/app/src/main/java/samples/linhtruong/com/app/test/TestRegexActivity`
+  + `ref:`[Vogella] (http://www.vogella.com/tutorials/JavaRegularExpressions/article.html)
   
 - ####
