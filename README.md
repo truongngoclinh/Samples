@@ -31,7 +31,7 @@
 
 - ####[ ] Draw simple shape, simple custom View
 
-- ####[x] String Regex
+- ####[x] String Regex, Pattern and Matcher
   + `path: Samples/app/src/main/java/samples/linhtruong/com/app/test/TestRegexActivity`
   + `ref:`[Vogella] (http://www.vogella.com/tutorials/JavaRegularExpressions/article.html)
   
