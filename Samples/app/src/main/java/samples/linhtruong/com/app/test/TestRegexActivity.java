@@ -23,8 +23,8 @@ import samples.linhtruong.com.utils.RegexUtils;
 public class TestRegexActivity extends Activity {
 
     private final String regexSample1 = "abc1234xyz000 **9r ajz.";
-    public static final String regexSample = "This is my small example "
-            + "string which I'm going to " + "use for pattern matching.";
+    public static final String regexSample = "This is (012) my small example "
+            + "string which I'm going to " + "use for pattern matching, and the number is: 1234.";
 
 
     @ViewById(R.id.regexText)
@@ -51,7 +51,8 @@ public class TestRegexActivity extends Activity {
 //        regexStr = RegexUtils.regexNonword(regexSample);
 //        regexStr = RegexUtils.regexLetter(regexSample);
 
-        RegexUtils.regexCombine1(regexSample);
+//        RegexUtils.regexCombine(regexSample);
+        RegexUtils.regexCombinePatternMatcherTest(regexSample);
 
         boolean isMatched;
         isMatched = RegexUtils.isLessThenThreeHundred("aas128 asda");

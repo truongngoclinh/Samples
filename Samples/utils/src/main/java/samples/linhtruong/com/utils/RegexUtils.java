@@ -1,5 +1,8 @@
 package samples.linhtruong.com.utils;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 /**
  * CLASS DESCRIPTION
  *
@@ -33,7 +36,7 @@ public class RegexUtils {
         return str.replaceAll("\\W", "");
     }
 
-    public static void regexCombine1(String str) {
+    public static void regexCombine(String str) {
         System.out.println(str.matches("\\w.*"));
         String[] splitString = str.split("\\s+");
         for (String s : splitString) {
@@ -42,6 +45,25 @@ public class RegexUtils {
 
         System.out.println(str.replaceAll("\\s+", "\t"));
     }
+
+    public static void regexCombinePatternMatcherTest(String s) {
+        Pattern pattern = Pattern.compile("\\d{3}");
+        Matcher matcher = pattern.matcher(s);
+
+        System.out.println(matcher.find());
+        System.out.println(s.matches(".*\\d{3}.*"));
+
+        while (matcher.find()) {
+            System.out.println("Start index: " + matcher.start()
+                    + " - End index: " + matcher.end() + "");
+            System.out.println(matcher.group());
+        }
+
+        Pattern replace = Pattern.compile("[\\s+]");
+        Matcher matcher1 = replace.matcher(s);
+        System.out.println(matcher1.replaceAll("\t"));
+    }
+
 
     // returns true if the string matches exactly "true"
     public static boolean isTrue(String s) {
@@ -88,5 +110,6 @@ public class RegexUtils {
 //        return s.matches("[^0-9]*[12]?[0-9]{1,2}[^0-9]*");
         return s.matches("[^\\d]*[12]?[\\d]{1,2}[^\\d]*");
     }
+
 
 }
