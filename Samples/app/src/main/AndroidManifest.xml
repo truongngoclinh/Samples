@@ -57,6 +57,9 @@
         <activity
             android:name=".eventbus.TestNotificationAtivity_"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".test.TestRegexActivity_"
+            android:screenOrientation="portrait" />
 
         <activity
             android:name="com.facebook.FacebookActivity"

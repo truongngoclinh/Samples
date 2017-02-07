@@ -19,6 +19,7 @@ import samples.linhtruong.com.app.freetest.rxtest.TestRxDownloadFileActivity_;
 import samples.linhtruong.com.app.lrucache.LruCacheTestActivity_;
 import samples.linhtruong.com.app.tabs.TabHostActivity_;
 import samples.linhtruong.com.app.tabs.TabPagerActivity_;
+import samples.linhtruong.com.app.test.TestRegexActivity_;
 import samples.linhtruong.com.app.uireactive.RxActivity_;
 import samples.linhtruong.com.app.uireactive.data.DataObserver;
 import samples.linhtruong.com.app.uireactive.task.BaseTask;
@@ -26,6 +27,7 @@ import samples.linhtruong.com.app.uireactive.task.TaskExecutable;
 import samples.linhtruong.com.app.uireactive.task.TaskManager;
 import samples.linhtruong.com.base.BaseActivity;
 import samples.linhtruong.com.base.BaseApplication;
+import samples.linhtruong.com.base.manager.SingletonManager;
 
 @EActivity
 public class MainActivity extends BaseActivity implements TaskExecutable {
@@ -118,5 +120,18 @@ public class MainActivity extends BaseActivity implements TaskExecutable {
                 TestNotificationAtivity_.intent(activity).start();
             }
         });
+        findViewById(R.id.regexDemo).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                TestRegexActivity_.intent(activity).start();
+            }
+        });
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+        SingletonManager.unregisterAll();
     }
 }

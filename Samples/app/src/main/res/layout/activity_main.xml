@@ -65,4 +65,10 @@
         android:layout_height="wrap_content"
         android:text="EventBus" />
 
+    <Button
+        android:id="@+id/regexDemo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="String Regex" />
+
 </LinearLayout>
