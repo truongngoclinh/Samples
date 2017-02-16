@@ -1,6 +1,9 @@
 # ANDROID - Samples
 - ####[x] Notification system: custom EventBus
   + `path: Samples/app/src/main/java/samples/linhtruong/com/app/eventbus`
+  
+- ####[ ] Push notification with Firebase Cloud Messaging
+  + `path:`
 
 - ####[ ] TCP, UDP, HTTP implementation
   + `path:`
