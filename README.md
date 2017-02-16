@@ -4,7 +4,7 @@
   
 - ####[ ] Push notification with Firebase Cloud Messaging
   + `path: Samples/app/src/main/java/samples/linhtruong/com/app/fcm`
-  + `ref:` [`Androidhive`] (http://www.androidhive.info/2012/10/android-push-notifications-using-google-cloud-messaging-gcm-php-and-mysql/)
+  + `ref:` [`Androidhive`] (http://www.androidhive.info/2012/10/android-push-notifications-using-google-cloud-messaging-gcm-php-and-mysql/)
   
 - ####[ ] TCP, UDP, HTTP implementation
   + `path:`
