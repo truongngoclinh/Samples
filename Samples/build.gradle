@@ -10,6 +10,9 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:2.2.3'
 
+        // Add this line
+        classpath 'com.google.gms:google-services:3.0.0'
+
         // realm
         classpath libraries.realm
 

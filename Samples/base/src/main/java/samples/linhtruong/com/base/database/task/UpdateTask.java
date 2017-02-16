@@ -26,7 +26,7 @@ public abstract class UpdateTask<T> implements DbTask<T> {
             LogUtils.d("Cancel transaction");
             e.printStackTrace();
         }
-        
+
         return result;
     }
 

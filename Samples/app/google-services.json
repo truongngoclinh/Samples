@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "784161564021",
+    "firebase_url": "https://samples-229d0.firebaseio.com",
+    "project_id": "samples-229d0",
+    "storage_bucket": "samples-229d0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784161564021:android:1777807d00a4103a",
+        "android_client_info": {
+          "package_name": "samples.linhtruong.com.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "784161564021-urncs9h2v9aj27a1lcttri8c5f8pomei.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5NE99EG_ujkYUmuW8IADv8PCJPjp8cPQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

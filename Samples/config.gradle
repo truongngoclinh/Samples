@@ -22,7 +22,8 @@ ext.versions = [
         gson              : '2.6.2',
         materialDialog    : '0.8.5.9@aar',
         robotoTextView    : '2.5.0',
-        facebook          : '4.+'
+        facebook          : '4.+',
+        firebaseMessaging : '9.6.0'
 ]
 
 ext.libraries = [
@@ -51,4 +52,5 @@ ext.libraries = [
         materialDialog          : "com.afollestad.material-dialogs:core:$versions.materialDialog",
         robotoTextView          : "com.github.johnkil.android-robototextview:robototextview:$versions.robotoTextView",
         facebook                : "com.facebook.android:facebook-android-sdk:$versions.facebook",
+        firebaseMessaging       : "com.google.firebase:firebase-messaging:$versions.firebaseMessaging"
 ]
