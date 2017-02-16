@@ -3,7 +3,7 @@
   + `path: Samples/app/src/main/java/samples/linhtruong/com/app/eventbus`
   
 - ####[ ] Push notification with Firebase Cloud Messaging
-  + `path:`
+  + `path:` `abc`
   + `ref:` [`Androidhive`] (http://www.androidhive.info/2012/10/android-push-notifications-using-google-cloud-messaging-gcm-php-and-mysql/)
   
 - ####[ ] TCP, UDP, HTTP implementation
