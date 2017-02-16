@@ -2,6 +2,13 @@
 - ####[x] Notification system: custom EventBus
   + `path: Samples/app/src/main/java/samples/linhtruong/com/app/eventbus`
   
+- ####[ ] Push notification with Firebase Cloud Messaging
+  + `path:` `abc`
+  + `ref:` [`Androidhive`] (http://www.androidhive.info/2012/10/android-push-notifications-using-google-cloud-messaging-gcm-php-and-mysql/)
+  
+- ####[ ] TCP, UDP, HTTP implementation
+  + `path:`
+  
 - ####[ ] App state manager
   + `path:`
 
