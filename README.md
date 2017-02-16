@@ -9,7 +9,7 @@
 - ####[ ] TCP, UDP, HTTP implementation
   + `path:`
   
-- ####[] App state manager
+- ####[x] App state manager
   + `path: Samples/app/src/main/java/samples/linhtruong/com/app`
 
 - ####[x] Tabs layout
