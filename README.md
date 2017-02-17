@@ -4,8 +4,8 @@ In this repo I want to test/demo some Android topics which are common or I've ne
 I will manage to update as much as possible in my spare time.
 
 - ####[x] UI-Reactive with RxJava
-  + *`path: Samples/app/src/main/java/samples/linhtruong/com/app/uireactive`*
-  + **move to the new repo: https://github.com/truongngoclinh/reactive-ui-with-rxjava**
+  + ~~`path: Samples/app/src/main/java/samples/linhtruong/com/app/uireactive`~~
+  + `moved to the new repo: https://github.com/truongngoclinh/reactive-ui-with-rxjava`
   
 - ####[x] Notification system: custom EventBus
   + `path: Samples/app/src/main/java/samples/linhtruong/com/app/eventbus`
