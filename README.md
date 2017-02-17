@@ -1,4 +1,6 @@
 # ANDROID - Samples
+In this repo I want to test/demo some Android topics, just for learning and references.
+
 - ####[x] Notification system: custom EventBus
   + `path: Samples/app/src/main/java/samples/linhtruong/com/app/eventbus`
   
@@ -36,12 +38,13 @@
 
 - ####[ ] Memory leak
 
-- ####[ ] Java Generic
-
-- ####[ ] Draw simple shape, simple custom View
+- ####[ ] Drawing shape,  custom view
 
 - ####[x] String Regex, Pattern and Matcher
   + `path: Samples/app/src/main/java/samples/linhtruong/com/app/test/TestRegexActivity`
   + `ref:`[`Vogella`] (http://www.vogella.com/tutorials/JavaRegularExpressions/article.html)
   
-- ####...
+- ####[ ] Popular APIs: Google map, Tweeter
+  + `path:`
+  
+- ####[ ] Multi-threading
