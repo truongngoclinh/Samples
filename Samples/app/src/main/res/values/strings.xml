@@ -2,4 +2,35 @@
     <string name="fb_app_id">707190462774295</string>
     <string name="app_name">Samples</string>
     <string name="scrollText">test\n\n\n\n\n\n\n\\n\n\n\n\n\n\nn\\n\n\n\n\n\n\n\n\n\n\n\\n\n\n\n\n\n\n\n</string>
+
+    <!-- Drawer -->
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_home">Home</string>
+    <string name="nav_photo">Photo</string>
+    <string name="nav_notification">Notification</string>
+    <string name="nav_other">Other</string>
+    <string name="nav_about">About</string>
+    <string name="nav_privacy">Privacy</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Home</item>
+        <item>Photos</item>
+        <item>Notifications</item>
+    </string-array>
+
+    <string name="activity_title_about_us">About Us</string>
+    <string name="activity_title_privacy_policy">Privacy Policy</string>
+    <string name="action_clear_all">Clear All</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_mark_all_read">Mark All as Read</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
 </resources>

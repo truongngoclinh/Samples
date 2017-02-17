@@ -23,7 +23,8 @@ ext.versions = [
         materialDialog    : '0.8.5.9@aar',
         robotoTextView    : '2.5.0',
         facebook          : '4.+',
-        firebaseMessaging : '9.6.0'
+        firebaseMessaging : '9.6.0',
+        glide             : '3.7.0'
 ]
 
 ext.libraries = [
@@ -33,6 +34,7 @@ ext.libraries = [
         supportAppCompat        : "com.android.support:appcompat-v7:$versions.supportLibs",
         supportDesign           : "com.android.support:design:$versions.supportLibs",
         supportRecyclerView     : "com.android.support:recyclerview-v7:$versions.supportLibs",
+        support                 : "com.android.support:support-v4:$versions.supportLibs",
 
         // 3rd
         realm                   : "io.realm:realm-gradle-plugin:$versions.realm",
@@ -52,5 +54,6 @@ ext.libraries = [
         materialDialog          : "com.afollestad.material-dialogs:core:$versions.materialDialog",
         robotoTextView          : "com.github.johnkil.android-robototextview:robototextview:$versions.robotoTextView",
         facebook                : "com.facebook.android:facebook-android-sdk:$versions.facebook",
-        firebaseMessaging       : "com.google.firebase:firebase-messaging:$versions.firebaseMessaging"
+        firebaseMessaging       : "com.google.firebase:firebase-messaging:$versions.firebaseMessaging",
+        glide                   : "com.github.bumptech.glide:glide:$versions.glide"
 ]

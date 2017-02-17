@@ -10,6 +10,7 @@ import org.androidannotations.annotations.EActivity;
 
 import javax.inject.Inject;
 
+import samples.linhtruong.com.app.drawer.DrawerActivity_;
 import samples.linhtruong.com.app.eventbus.TestNotificationAtivity_;
 import samples.linhtruong.com.app.facebook.FacebookShareActivity_;
 import samples.linhtruong.com.app.fcm.activity.FirebaseTestActivity_;
@@ -132,6 +133,13 @@ public class MainActivity extends BaseActivity implements TaskExecutable {
             @Override
             public void onClick(View view) {
                 FirebaseTestActivity_.intent(activity).start();
+            }
+        });
+
+        findViewById(R.id.drawer).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                DrawerActivity_.intent(activity).start();
             }
         });
     }

@@ -65,6 +65,7 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".drawer.DrawerActivity_"
+            android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait" />
 
         <activity

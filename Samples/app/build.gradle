@@ -36,6 +36,7 @@ dependencies {
     compile project(path: ':utils')
 
     compile libraries.supportDesign
+    compile libraries.supportAppCompat
 
     apt libraries.androidAnnotations
     compile libraries.androidAnnotationsApi
@@ -51,6 +52,9 @@ dependencies {
     compile libraries.facebook
 
     compile libraries.firebaseMessaging
+
+    compile libraries.glide
+    compile libraries.support
 }
 
 apply plugin: 'com.google.gms.google-services'

@@ -81,5 +81,11 @@
             android:layout_height="wrap_content"
             android:text="Firebase test" />
 
+        <Button
+            android:id="@+id/drawer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drawer test" />
+
     </LinearLayout>
 </ScrollView>
