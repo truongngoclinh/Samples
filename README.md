@@ -5,7 +5,7 @@ I will manage to update as much as possible in my spare time.
 
 - ####[x] UI-Reactive with RxJava
   + ~~`path: Samples/app/src/main/java/samples/linhtruong/com/app/uireactive`~~
-  + `moved to the new repo: https://github.com/truongngoclinh/reactive-ui-with-rxjava`
+  + `moved to the new repo:` [`Reactive UI design with RxJava`] (https://github.com/truongngoclinh/reactive-ui-with-rxjava)
   
 - ####[x] Notification system: custom EventBus
   + `path: Samples/app/src/main/java/samples/linhtruong/com/app/eventbus`
@@ -53,4 +53,4 @@ I will manage to update as much as possible in my spare time.
 - ####[ ] Multi-threading
 
 - ####[ ] Livestreaming
-  + `path: https://github.com/truongngoclinh/ezstreaming`
+  + `path:` [`EzStreaming`] (https://github.com/truongngoclinh/ezstreaming)
