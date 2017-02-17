@@ -13,7 +13,7 @@
   + `path: Samples/app/src/main/java/samples/linhtruong/com/app`
 
 - ####[x] Tabs layout
-  + `path: Samples/app/src/main/java/samples/linhtruong/com/app/tabs`
+  + `path: Samples/app/src/main/java/samples/linhtruong/com/app/tabs`
   + `ref:`[`Androidhive`] (http://www.androidhive.info/2015/09/android-material-design-working-with-tabs/)
 
 - ####[ ] UI-Reactive with RxJava
