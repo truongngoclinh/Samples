@@ -1,5 +1,5 @@
 # ANDROID - Samples
-In this repo I want to test/demo some Android topics, just for learning and references.
+In this repo I want to test/demo some Android topics which are common or I've never tried. So it is just for learning and references.
 
 - ####[x] Notification system: custom EventBus
   + `path: Samples/app/src/main/java/samples/linhtruong/com/app/eventbus`
