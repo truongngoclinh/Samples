@@ -1,5 +1,6 @@
 # ANDROID - Samples
-In this repo I want to test/demo some Android topics which are common or I've never tried or something I gained during working time. So it is just for learning and references. 
+In this repo I want to test/demo some Android topics which are common or I've never tried or something I gained during working time. So it is just for learning and references.
+
 I will manage to update as much as possible in my spare time.
 
 - ####[x] Notification system: custom EventBus
