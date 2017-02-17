@@ -28,7 +28,7 @@
 
 - ####[ ] WebView, deeplink, WebViewClient, WebChromeClient, WebJsBridge
 
-- ####[ ] Drawer, Navigation View, Navigator
+- ####[x] Drawer, Navigation View, Navigator
   + `path: Samples/app/src/main/java/samples/linhtruong/com/app/drawer`
   + `ref:`[`Androidhive`] (http://www.androidhive.info/2013/11/android-sliding-menu-using-navigation-drawer/)
 
@@ -44,4 +44,4 @@
   + `path: Samples/app/src/main/java/samples/linhtruong/com/app/test/TestRegexActivity`
   + `ref:`[`Vogella`] (http://www.vogella.com/tutorials/JavaRegularExpressions/article.html)
   
-- ####[ ]...
+- ####...
