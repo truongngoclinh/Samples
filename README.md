@@ -3,6 +3,10 @@ In this repo I want to test/demo some Android topics which are common or I've ne
 
 I will manage to update as much as possible in my spare time.
 
+- ####[x] UI-Reactive with RxJava
+  + *`path: Samples/app/src/main/java/samples/linhtruong/com/app/uireactive`*
+  + **move to the new repo: https://github.com/truongngoclinh/reactive-ui-with-rxjava**
+  
 - ####[x] Notification system: custom EventBus
   + `path: Samples/app/src/main/java/samples/linhtruong/com/app/eventbus`
   
@@ -19,9 +23,6 @@ I will manage to update as much as possible in my spare time.
 - ####[x] Tabs layout
   + `path: Samples/app/src/main/java/samples/linhtruong/com/app/tabs`
   + `ref:`[`Androidhive`] (http://www.androidhive.info/2015/09/android-material-design-working-with-tabs/)
-
-- ####[ ] UI-Reactive with RxJava
-  + `path: Samples/app/src/main/java/samples/linhtruong/com/app/uireactive`
   
 - ####[x] Integrate Facebook: FacebookSdk, Graph API
   + `path: Samples/app/src/main/java/samples/linhtruong/com/app/facebook`
