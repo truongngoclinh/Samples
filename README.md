@@ -2,18 +2,18 @@
 - ####[x] Notification system: custom EventBus
   + `path: Samples/app/src/main/java/samples/linhtruong/com/app/eventbus`
   
-- ####[ ] Push notification with Firebase Cloud Messaging
-  + `path:` `abc`
-  + `ref:` [`Androidhive`] (http://www.androidhive.info/2012/10/android-push-notifications-using-google-cloud-messaging-gcm-php-and-mysql/)
+- ####[x] Push notification with Firebase Cloud Messaging
+  + `path: Samples/app/src/main/java/samples/linhtruong/com/app/fcm`
+  + `ref:` [`Androidhive`] (http://www.androidhive.info/2012/10/android-push-notifications-using-google-cloud-messaging-gcm-php-and-mysql/)
   
 - ####[ ] TCP, UDP, HTTP implementation
   + `path:`
   
-- ####[ ] App state manager
-  + `path:`
+- ####[x] App state manager
+  + `path: Samples/app/src/main/java/samples/linhtruong/com/app`
 
 - ####[x] Tabs layout
-  + `path: Samples/app/src/main/java/samples/linhtruong/com/app/tabs`
+  + `path: Samples/app/src/main/java/samples/linhtruong/com/app/tabs`
   + `ref:`[`Androidhive`] (http://www.androidhive.info/2015/09/android-material-design-working-with-tabs/)
 
 - ####[ ] UI-Reactive with RxJava
@@ -24,11 +24,13 @@
   + `ref:`[`FacebookSDK`] (https://developers.facebook.com/docs/android/)
 
 - ####[ ] Memory cache (LRU cache), disk cache, ContentProvider cache
-  + `LRU cache: Samples/app/src/main/java/samples/linhtruong/com/app/lrucache`
+  + `LRU cache path: Samples/app/src/main/java/samples/linhtruong/com/app/lrucache`
 
 - ####[ ] WebView, deeplink, WebViewClient, WebChromeClient, WebJsBridge
 
-- ####[ ] Drawer, Navigation View, Navigator
+- ####[x] Drawer, Navigation View, Navigator
+  + `path: Samples/app/src/main/java/samples/linhtruong/com/app/drawer`
+  + `ref:`[`Androidhive`] (http://www.androidhive.info/2013/11/android-sliding-menu-using-navigation-drawer/)
 
 - ####[ ] Spannable String, TextInputLayout, ColorStateListDrawable
 
@@ -40,6 +42,6 @@
 
 - ####[x] String Regex, Pattern and Matcher
   + `path: Samples/app/src/main/java/samples/linhtruong/com/app/test/TestRegexActivity`
-  + `ref:`[Vogella] (http://www.vogella.com/tutorials/JavaRegularExpressions/article.html)
+  + `ref:`[`Vogella`] (http://www.vogella.com/tutorials/JavaRegularExpressions/article.html)
   
-- ####
+- ####...
