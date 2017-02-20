@@ -63,6 +63,6 @@ I will manage to update as much as possible in my spare time.
 - ####[ ] Livestreaming
   + `path:` [`EzStreaming`] (https://github.com/truongngoclinh/ezstreaming)
   
-- ####[ ] JUnit: mockito, mockito + dagger2
+- ####[ ] Unit test: mockito, mockito + dagger2
   + `path:`
   + `ref:`
