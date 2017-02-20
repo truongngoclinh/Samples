@@ -34,8 +34,9 @@ I will manage to update as much as possible in my spare time.
     + `ref:` [`Android developer`] (https://developer.android.com/reference/android/util/LruCache.html)
   + `Disk cache: sdcard memory used (i.e fb app...)`
     + `path: `
-    + `ref:` [`Android developer`] (https://developer.android.com/topic/performance/graphics/cache-bitmap.html#disk-cache)
-    + `ref:` [`JarkWharton disk-based LRU cache`] (https://github.com/JakeWharton/DiskLruCache) (i.e Glide lib...)
+    + `ref:` 
+      + [`Android developer`] (https://developer.android.com/topic/performance/graphics/cache-bitmap.html#disk-cache
+      + [`JarkWharton disk-based LRU cache`] (https://github.com/JakeWharton/DiskLruCache) (i.e Glide lib...)
 
 - ####[ ] WebView, deeplink, WebViewClient, WebChromeClient, WebJsBridge
 
@@ -48,8 +49,9 @@ I will manage to update as much as possible in my spare time.
 - ####[x] Memory leak
   + `path: Samples/app/src/main/java/samples/linhtruong/com/app/memoryleak`
   + `ref:`[`Garena engineering`] (https://engineering.garena.com/memory-leaks-in-android/)
-  + `tool check:` [`Leak canary`] (https://github.com/square/leakcanary)
-  + `tool check:` [`MAT`] (https://android-developers.googleblog.com/2011/03/memory-analysis-for-android.html)
+  + `tool check:` 
+    + [`Leak canary`] (https://github.com/square/leakcanary)
+    + [`MAT`] (https://android-developers.googleblog.com/2011/03/memory-analysis-for-android.html)
   
 - ####[ ] Drawing shape,  custom view
 
