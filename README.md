@@ -48,6 +48,7 @@ I will manage to update as much as possible in my spare time.
 - ####[x] Memory leak
   + `path: Samples/app/src/main/java/samples/linhtruong/com/app/memoryleak`
   + `ref:`[`Garena engineering`] (https://engineering.garena.com/memory-leaks-in-android/)
+  + `heap size:` [`SO`] (http://stackoverflow.com/questions/18675557/what-is-the-maximum-amount-of-ram-an-app-can-use)
   + `tools:` 
     + [`Leak canary`] (https://github.com/square/leakcanary)
     + [`MAT`] (https://android-developers.googleblog.com/2011/03/memory-analysis-for-android.html)
