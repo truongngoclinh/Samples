@@ -61,7 +61,7 @@ I will manage to update as much as possible in my spare time.
 - ####[ ] Multi-threading
 
 - ####[ ] Livestreaming
-  + `path:` [`EzStreaming`] (https://github.com/truongngoclinh/ezstreaming)
+  + `path: checkout this repo` [`EzStreaming`] (https://github.com/truongngoclinh/ezstreaming)
   
 - ####[ ] Unit test: mockito, mockito + dagger2
   + `path:`
