@@ -28,8 +28,14 @@ I will manage to update as much as possible in my spare time.
   + `path: Samples/app/src/main/java/samples/linhtruong/com/app/facebook`
   + `ref:`[`FacebookSDK`] (https://developers.facebook.com/docs/android/)
 
-- ####[ ] Memory cache (LRU cache), disk cache, ContentProvider cache
-  + `LRU cache path: Samples/app/src/main/java/samples/linhtruong/com/app/lrucache`
+- ####[ ] Memory cache, disk cache
+  + `LRU cache: interal application memory used`
+    + `path: Samples/app/src/main/java/samples/linhtruong/com/app/lrucache`
+    + `ref:` [`Android developer`] (https://developer.android.com/reference/android/util/LruCache.html)
+  + `Disk cache: sdcard memory used (i.e fb app...)`
+    + `path: `
+    + `ref:` [`Android developer`] (https://developer.android.com/topic/performance/graphics/cache-bitmap.html#disk-cache)
+    + `ref:` [`JarkWharton disk-based LRU cache`] (https://github.com/JakeWharton/DiskLruCache) (i.e Glide lib...)
 
 - ####[ ] WebView, deeplink, WebViewClient, WebChromeClient, WebJsBridge
 
