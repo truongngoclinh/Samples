@@ -34,7 +34,7 @@ I will manage to update as much as possible in my spare time.
     + `ref:` [`Android developer`] (https://developer.android.com/reference/android/util/LruCache.html)
   + `Disk cache: sdcard memory used (i.e fb app...)`
     + `path: `
-    + `ref:` [`Android developer`] (https://developer.android.com/topic/performance/graphics/cache-bitmap.html#disk-cache
+    + `ref:` [`Android developer`] (https://developer.android.com/topic/performance/graphics/cache-bitmap.html#disk-cache)
     + `ref:` [`JarkWharton disk-based LRU cache`] (https://github.com/JakeWharton/DiskLruCache) (i.e Glide lib...)
 
 - ####[ ] WebView, deeplink, WebViewClient, WebChromeClient, WebJsBridge
