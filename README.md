@@ -39,7 +39,9 @@ I will manage to update as much as possible in my spare time.
 
 - ####[ ] Spannable String, TextInputLayout, ColorStateListDrawable
 
-- ####[ ] Memory leak
+- ####[x] Memory leak
+  + `path: Samples/app/src/main/java/samples/linhtruong/com/app/memoryleak`
+  + `ref:`[`Garena engineering`] (https://engineering.garena.com/memory-leaks-in-android/)
 
 - ####[ ] Drawing shape,  custom view
 
