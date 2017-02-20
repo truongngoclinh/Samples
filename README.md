@@ -48,7 +48,9 @@ I will manage to update as much as possible in my spare time.
 - ####[x] Memory leak
   + `path: Samples/app/src/main/java/samples/linhtruong/com/app/memoryleak`
   + `ref:`[`Garena engineering`] (https://engineering.garena.com/memory-leaks-in-android/)
-
+  + `tool check:` [`Leak canary`] (https://github.com/square/leakcanary)
+  + `tool check:` [`MAT`] (https://android-developers.googleblog.com/2011/03/memory-analysis-for-android.html)
+  
 - ####[ ] Drawing shape,  custom view
 
 - ####[x] String Regex, Pattern and Matcher
