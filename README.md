@@ -67,6 +67,11 @@ I will manage to update as much as possible in my spare time.
 - ####[ ] Livestreaming
   + `path: checkout this repo` [`EzStreaming`] (https://github.com/truongngoclinh/ezstreaming)
   
-- ####[ ] Unit test: Expresso, Expresso + Dagger 2, Mockito...
-  + `path:`
-  + `ref:`
+- ####[ ] Testing: Unit tests, Integration tests (Expresso, Expresso + Dagger 2, Mockito...)
+  + Unit test: local tests (local JVM), intrumentation tests (Android platform)
+    + `path:`
+    + `ref:`
+    
+  + Integration tests
+  
+- ####[ ]...
