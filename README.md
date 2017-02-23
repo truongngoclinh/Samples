@@ -82,6 +82,7 @@ I will manage to update as much as possible in my spare time.
   + `ref:` [`JarkWharton introduction`] (https://www.youtube.com/watch?v=plK0zyRLIP8)
   
 - ####[ ] RxJava 2
-  + `ref:` [JarkWharton introduction`] (https://www.youtube.com/watch?v=htIXKI5gOQU)
+  + `ref:` [`JarkWharton introduction`] (https://www.youtube.com/watch?v=htIXKI5gOQU)
+  + `ref:` [`Official change`] (https://realm.io/news/gotocph-jake-wharton-exploring-rxjava2-android/)
   
 - ####[ ]
