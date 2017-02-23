@@ -76,7 +76,7 @@ I will manage to update as much as possible in my spare time.
     + `path:`
     + `ref:`
   
-- ####[ ] DI with Dagger 2
+- ####[ ] DI with Dagger 2: module, component, @singleton, @scope, @inject...
   + `path:`
   + `ref:` [`Beginner`] (https://medium.com/@Miqubel/understanding-dagger-2-367ff1bd184f#.6h6kesto9)
   + `ref:` [`JarkWharton introduction`] (https://www.youtube.com/watch?v=plK0zyRLIP8)
