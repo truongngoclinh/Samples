@@ -73,6 +73,8 @@ I will manage to update as much as possible in my spare time.
     + `ref:`
     
   + Integration tests
+    + `path:`
+    + `ref:`
   
 - ####[ ] DI with Dagger 2
   + `path:`
