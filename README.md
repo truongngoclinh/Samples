@@ -79,10 +79,14 @@ I will manage to update as much as possible in my spare time.
 - ####[ ] DI with Dagger 2: module, component, @singleton, @scope, @inject...
   + `path:`
   + `ref:` [`Beginner`] (https://medium.com/@Miqubel/understanding-dagger-2-367ff1bd184f#.6h6kesto9)
-  + `ref:` [`JarkWharton introduction`] (https://www.youtube.com/watch?v=plK0zyRLIP8)
+  + `ref:` [`JarkWharton introduction`] (https://www.youtube.com/watch?v=plK0zyRLIP8)
   
 - ####[ ] RxJava 2
   + `ref:` [`JarkWharton introduction`] (https://www.youtube.com/watch?v=htIXKI5gOQU)
   + `ref:` [`Official change`] (https://realm.io/news/gotocph-jake-wharton-exploring-rxjava2-android/)
   
-- ####[ ]
+- ####[ ] MVP demo
+  + `path:`
+  + `ref:`
+  
+- ####[] 
