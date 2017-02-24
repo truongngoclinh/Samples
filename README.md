@@ -87,6 +87,6 @@ I will manage to update as much as possible in my spare time.
   
 - ####[ ] MVP demo
   + `path:`
-  + `ref:`
+  + `ref:` [`Android clean architecture`] (https://github.com/android10/Android-CleanArchitecture)
   
-- ####[] 
+- ####[ ] 
