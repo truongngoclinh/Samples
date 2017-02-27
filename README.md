@@ -3,8 +3,6 @@ In this repo I want to test/demo some Android topics which are common or I've ne
 
 I will manage to update as much as possible in my spare time.
 
-Added contributor: `@trithucbkpro @thanhdt284`
-
 - ####[x] Reactive UI design with RxJava
   + ~~`path: Samples/app/src/main/java/samples/linhtruong/com/app/uireactive`~~
   + `moved to the new repo:` [`Reactive UI design with RxJava`] (https://github.com/truongngoclinh/reactive-ui-with-rxjava)
@@ -69,7 +67,7 @@ Added contributor: `@trithucbkpro @thanhdt284`
 - ####[ ] Livestreaming
   + `path: checkout this repo` [`EzStreaming`] (https://github.com/truongngoclinh/ezstreaming)
   
-- ####[ ] Testing: Unit tests, Integration tests (Expresso, Expresso + Dagger 2, Mockito...)
+- ####[ ] Testing: Unit tests, Integration tests (Expresso, Expresso + Dagger 2, JUnit, Mockito, Roboelectric...)
   + Unit test: local tests (local JVM), intrumentation tests (Android platform)
     + `path:`
     + `ref:`
@@ -87,8 +85,8 @@ Added contributor: `@trithucbkpro @thanhdt284`
   + `ref:` [`JarkWharton introduction`] (https://www.youtube.com/watch?v=htIXKI5gOQU)
   + `ref:` [`Official change`] (https://realm.io/news/gotocph-jake-wharton-exploring-rxjava2-android/)
   
-- ####[ ] MVP demo
-  + `path:`
+- ####[ ] Android clean architecture
+  + `path:`
   + `ref:` [`Android clean architecture`] (https://github.com/android10/Android-CleanArchitecture)
   
 - ####[ ] 
