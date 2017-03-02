@@ -10,4 +10,6 @@ import samples.linhtruong.com.app.uireactive.database.schema.User;
 
 @RealmModule(classes = {User.class})
 public class UserModule {
+
 }
+

@@ -67,6 +67,10 @@
             android:name=".drawer.DrawerActivity_"
             android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".infinitecarousel.BannerActivity_"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait" />
 
         <activity
             android:name="com.facebook.FacebookActivity"

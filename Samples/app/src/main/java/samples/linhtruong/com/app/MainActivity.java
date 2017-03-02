@@ -17,6 +17,8 @@ import samples.linhtruong.com.app.fcm.activity.FirebaseTestActivity_;
 import samples.linhtruong.com.app.freetest.rxtest.TestRxActivity_;
 import samples.linhtruong.com.app.freetest.rxtest.TestRxComponentsActivity_;
 import samples.linhtruong.com.app.freetest.rxtest.TestRxDownloadFileActivity_;
+import samples.linhtruong.com.app.infinitecarousel.BannerActivity;
+import samples.linhtruong.com.app.infinitecarousel.BannerActivity_;
 import samples.linhtruong.com.app.lrucache.LruCacheTestActivity_;
 import samples.linhtruong.com.app.tabs.TabHostActivity_;
 import samples.linhtruong.com.app.tabs.TabPagerActivity_;
@@ -140,6 +142,13 @@ public class MainActivity extends BaseActivity implements TaskExecutable {
             @Override
             public void onClick(View view) {
                 DrawerActivity_.intent(activity).start();
+            }
+        });
+
+        findViewById(R.id.carousel).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                BannerActivity_.intent(activity).start();
             }
         });
     }

@@ -55,6 +55,8 @@ dependencies {
 
     compile libraries.glide
     compile libraries.support
+
+    compile libraries.picasso
 }
 
 apply plugin: 'com.google.gms.google-services'

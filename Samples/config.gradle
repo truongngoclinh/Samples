@@ -24,7 +24,8 @@ ext.versions = [
         robotoTextView    : '2.5.0',
         facebook          : '4.+',
         firebaseMessaging : '9.6.0',
-        glide             : '3.7.0'
+        glide             : '3.7.0',
+        picasso           : '2.5.2'
 ]
 
 ext.libraries = [
@@ -55,5 +56,6 @@ ext.libraries = [
         robotoTextView          : "com.github.johnkil.android-robototextview:robototextview:$versions.robotoTextView",
         facebook                : "com.facebook.android:facebook-android-sdk:$versions.facebook",
         firebaseMessaging       : "com.google.firebase:firebase-messaging:$versions.firebaseMessaging",
-        glide                   : "com.github.bumptech.glide:glide:$versions.glide"
+        glide                   : "com.github.bumptech.glide:glide:$versions.glide",
+        picasso                 : "com.squareup.picasso:picasso:$versions.picasso"
 ]
