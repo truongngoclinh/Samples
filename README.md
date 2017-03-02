@@ -62,6 +62,9 @@ I will manage to update as much as possible in my spare time.
 - ####[ ] Popular APIs: Google map, Tweeter
   + `path:`
   
+- ####[x] Simple infinite carousel
+  + `path: Samples/app/src/main/java/samples/linhtruong/com/app/infinitecarousel`
+  
 - ####[ ] Multi-threading
 
 - ####[ ] Livestreaming
