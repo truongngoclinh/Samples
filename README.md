@@ -62,6 +62,9 @@ I will manage to update as much as possible in my spare time.
 - ####[ ] Popular APIs: Google map, Tweeter
   + `path:`
   
+- ####[x] Simple infinite carousel
+  + `path: Samples/app/src/main/java/samples/linhtruong/com/app/infinitecarousel`
+  
 - ####[ ] Multi-threading
 
 - ####[ ] Livestreaming
@@ -77,7 +80,7 @@ I will manage to update as much as possible in my spare time.
     + `ref:`
   
 - ####[ ] DI with Dagger 2: module, component, @singleton, @scope, @inject...
-  + `path:`
+  + `path: checkout this repo` [`Dagger2`] (https://github.com/truongngoclinh/android_dagger2_sample)
   + `ref:` [`Beginner`] (https://medium.com/@Miqubel/understanding-dagger-2-367ff1bd184f#.6h6kesto9)
   + `ref:` [`JarkWharton introduction`] (https://www.youtube.com/watch?v=plK0zyRLIP8)
   
