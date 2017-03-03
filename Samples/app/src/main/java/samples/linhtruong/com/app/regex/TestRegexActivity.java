@@ -1,4 +1,4 @@
-package samples.linhtruong.com.app.test;
+package samples.linhtruong.com.app.regex;
 
 import android.app.Activity;
 import android.os.Bundle;

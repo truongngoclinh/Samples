@@ -49,7 +49,10 @@ import samples.linhtruong.com.app.facebook.retrofit.ApiService;
 import samples.linhtruong.com.base.BaseActivity;
 
 /**
- * CLASS DESCRIPTION
+ * Facebook API sample: share an screen shot {@link #captureScreenShot(View)} to user's wall
+ * Using Facebook sdk, ShareDialog to share {@link #shareWithAppInstalled()}
+ * Using Graph api, post method to share, need 'publish_permission" approved. {@link #shareWithoutAppInstalled()}
+ * Note that due to Facebook's policy we can only use Graph api without ShareDialog.
  *
  * @author linhtruong
  * @date 1/4/17 - 16:08.
@@ -156,30 +159,6 @@ public class FacebookShareActivity extends BaseActivity {
         }
     }
 
-    private void testGraphAPI() {
-        Log.d(TAG, "testGraphAPI: ");
-        ApiService service = ApiClient.getRetrofit().create(ApiService.class);
-//        Call<FeedResponse> call = service.postMessageOnFeed("test...", ApiConstant.ACCESS_TOKEN.publish_action);
-        Call<FeedResponse> call = service.postPhotoOnFeed("test photo upload", getSampleBitmapAsByteArray(), ApiConstant.ACCESS_TOKEN.publich_action_and_user_photos);
-        call.enqueue(new Callback<FeedResponse>() {
-            @Override
-            public void onResponse(Call<FeedResponse> call, Response<FeedResponse> response) {
-                if (response.isSuccessful()) {
-                    Log.d(TAG, "onResponse: successful published!");
-                    Log.d(TAG, "onResponse: " + response.body());
-                } else {
-                    Log.d(TAG, "onResponse: unsuccessful!");
-                    Log.d(TAG, "onResponse: " + response.errorBody());
-                }
-            }
-
-            @Override
-            public void onFailure(Call<FeedResponse> call, Throwable t) {
-                Log.d(TAG, "onFailure: ");
-            }
-        });
-    }
-
     private Bitmap getSampleBitmap() {
         return BitmapFactory.decodeResource(getResources(), R.drawable.songs_white);
     }
@@ -281,5 +260,29 @@ public class FacebookShareActivity extends BaseActivity {
         view.setDrawingCacheEnabled(false);
 
         return b;
+    }
+
+    private void testGraphAPI() {
+        Log.d(TAG, "testGraphAPI: ");
+        ApiService service = ApiClient.getRetrofit().create(ApiService.class);
+//        Call<FeedResponse> call = service.postMessageOnFeed("test...", ApiConstant.ACCESS_TOKEN.publish_action);
+        Call<FeedResponse> call = service.postPhotoOnFeed("test photo upload", getSampleBitmapAsByteArray(), ApiConstant.ACCESS_TOKEN.publich_action_and_user_photos);
+        call.enqueue(new Callback<FeedResponse>() {
+            @Override
+            public void onResponse(Call<FeedResponse> call, Response<FeedResponse> response) {
+                if (response.isSuccessful()) {
+                    Log.d(TAG, "onResponse: successful published!");
+                    Log.d(TAG, "onResponse: " + response.body());
+                } else {
+                    Log.d(TAG, "onResponse: unsuccessful!");
+                    Log.d(TAG, "onResponse: " + response.errorBody());
+                }
+            }
+
+            @Override
+            public void onFailure(Call<FeedResponse> call, Throwable t) {
+                Log.d(TAG, "onFailure: ");
+            }
+        });
     }
 }

@@ -8,8 +8,6 @@ import android.view.View;
 
 import org.androidannotations.annotations.EActivity;
 
-import javax.inject.Inject;
-
 import samples.linhtruong.com.app.drawer.DrawerActivity_;
 import samples.linhtruong.com.app.eventbus.TestNotificationAtivity_;
 import samples.linhtruong.com.app.facebook.FacebookShareActivity_;
@@ -17,26 +15,16 @@ import samples.linhtruong.com.app.fcm.activity.FirebaseTestActivity_;
 import samples.linhtruong.com.app.freetest.rxtest.TestRxActivity_;
 import samples.linhtruong.com.app.freetest.rxtest.TestRxComponentsActivity_;
 import samples.linhtruong.com.app.freetest.rxtest.TestRxDownloadFileActivity_;
-import samples.linhtruong.com.app.infinitecarousel.BannerActivity;
 import samples.linhtruong.com.app.infinitecarousel.BannerActivity_;
 import samples.linhtruong.com.app.lrucache.LruCacheTestActivity_;
 import samples.linhtruong.com.app.tabs.TabHostActivity_;
 import samples.linhtruong.com.app.tabs.TabPagerActivity_;
-import samples.linhtruong.com.app.test.TestRegexActivity_;
-import samples.linhtruong.com.app.uireactive.RxActivity_;
-import samples.linhtruong.com.app.uireactive.data.DataObserver;
-import samples.linhtruong.com.app.uireactive.task.BaseTask;
-import samples.linhtruong.com.app.uireactive.task.TaskExecutable;
-import samples.linhtruong.com.app.uireactive.task.TaskManager;
+import samples.linhtruong.com.app.regex.TestRegexActivity_;
 import samples.linhtruong.com.base.BaseActivity;
-import samples.linhtruong.com.base.BaseApplication;
 import samples.linhtruong.com.base.manager.SingletonManager;
 
 @EActivity
-public class MainActivity extends BaseActivity implements TaskExecutable {
-
-    @Inject
-    TaskManager taskManager;
+public class MainActivity extends BaseActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -44,30 +32,9 @@ public class MainActivity extends BaseActivity implements TaskExecutable {
         setContentView(R.layout.activity_main);
 
         initLayout(this);
-        injectToAppComponent();
-    }
-
-    @Override
-    public <T> void executeTask(BaseTask<T> task, DataObserver<? super T> callBack) {
-        if (callBack == null) {
-            taskManager.executeTaskAndTrigger(task);
-        } else {
-            taskManager.executeTask(task);
-        }
-    }
-
-    private void injectToAppComponent() {
-        ((BaseApplication) getApplication()).getBaseComponent().inject(this);
     }
 
     private void initLayout(final Activity activity) {
-        findViewById(R.id.rxActivity).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                RxActivity_.intent(activity).start();
-            }
-        });
-
         findViewById(R.id.rxTestActivity).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

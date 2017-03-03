@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.Map;
 
 import samples.linhtruong.com.base.BaseSingleton;
-import samples.linhtruong.com.base.loop.MainUILoop;
+import samples.linhtruong.com.base.loop.UILooper;
 import samples.linhtruong.com.base.loop.TaskThreadPool;
 import samples.linhtruong.com.base.manager.SingletonManager;
 import samples.linhtruong.com.utils.LogUtils;
@@ -116,7 +116,7 @@ public class EventBus implements BaseSingleton {
 
     private void fireOnMainLoop(final EventSubscriber eventSubscriber, final Event event) {
         LogUtils.d("eventId: " + event.getRequestId());
-        MainUILoop.getInstance().post(new Runnable() {
+        UILooper.getInstance().post(new Runnable() {
             @Override
             public void run() {
                 eventSubscriber.onEvent(event);

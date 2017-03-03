@@ -14,18 +14,18 @@ import samples.linhtruong.com.utils.LogUtils;
  * @organization VED
  */
 
-public class MainUILoop {
+public class UILooper {
 
-    private static volatile MainUILoop mInstance;
+    private static volatile UILooper mInstance;
     private Handler mHandler;
 
-    private MainUILoop() {}
+    private UILooper() {}
 
-    public static MainUILoop getInstance() {
+    public static UILooper getInstance() {
         if (mInstance == null) {
-            synchronized (MainUILoop.class) {
+            synchronized (UILooper.class) {
                 if (mInstance == null) {
-                    mInstance = new MainUILoop();
+                    mInstance = new UILooper();
                 }
             }
         }

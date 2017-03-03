@@ -58,7 +58,7 @@
             android:name=".eventbus.TestNotificationAtivity_"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".test.TestRegexActivity_"
+            android:name=".regex.TestRegexActivity_"
             android:screenOrientation="portrait" />
         <activity
             android:name=".fcm.activity.FirebaseTestActivity_"
@@ -71,6 +71,14 @@
             android:name=".infinitecarousel.BannerActivity_"
             android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".dagger2.DaggerTestActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".dagger2.DaggerBaseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
             android:name="com.facebook.FacebookActivity"

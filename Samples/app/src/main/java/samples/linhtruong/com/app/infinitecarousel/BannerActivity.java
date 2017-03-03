@@ -13,7 +13,7 @@ import samples.linhtruong.com.app.R;
 import samples.linhtruong.com.base.BaseActivity;
 
 /**
- * CLASS DESCRIPTION
+ * Provide an auto scroll banners with interval {@link BannerView#ROTATE_INTERVAL_MILLS}
  *
  * @author linhtruong
  * @date 3/2/17 - 16:02.

@@ -10,12 +10,6 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/rxActivity"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="RxActivity" />
-
-        <Button
             android:id="@+id/rxTestActivity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -92,6 +86,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Simple carousel" />
+
+        <Button
+            android:id="@+id/undefine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Undefined sample" />
 
     </LinearLayout>
 </ScrollView>
