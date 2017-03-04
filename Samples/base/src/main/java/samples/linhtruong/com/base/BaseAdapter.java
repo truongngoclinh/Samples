@@ -8,16 +8,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * MODEL DESCRIPTION
+ * T DESCRIPTION
  *
  * @author linhtruong
  * @date 1/16/17 - 23:55.
  * @organization VED
  */
 
-public abstract class BaseAdapter<MODEL, HOLDER extends BaseAdapter.ViewHolder> extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+public abstract class BaseAdapter<T, H extends BaseAdapter.ViewHolder> extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
-    protected List<MODEL> mData = new ArrayList<>();
+    protected List<T> mData = new ArrayList<>();
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -26,7 +26,7 @@ public abstract class BaseAdapter<MODEL, HOLDER extends BaseAdapter.ViewHolder> 
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-        MODEL data = mData.get(position);
+        T data = mData.get(position);
         ((ViewHolder) holder).bindData(data);
     }
 
@@ -35,7 +35,7 @@ public abstract class BaseAdapter<MODEL, HOLDER extends BaseAdapter.ViewHolder> 
         return mData.size();
     }
 
-    public void setData(List<? extends MODEL> data) {
+    public void setData(List<? extends T> data) {
         mData.clear();
         if (data != null) {
             mData.addAll(data);
@@ -44,14 +44,14 @@ public abstract class BaseAdapter<MODEL, HOLDER extends BaseAdapter.ViewHolder> 
         notifyDataSetChanged();
     }
 
-    public abstract HOLDER createHolder(ViewGroup parent, int viewType);
+    public abstract H createHolder(ViewGroup parent, int viewType);
 
-    public static abstract class ViewHolder<MODEL> extends RecyclerView.ViewHolder {
+    public static abstract class ViewHolder<T> extends RecyclerView.ViewHolder {
 
         public ViewHolder(View itemView) {
             super(itemView);
         }
 
-        public abstract void bindData(MODEL data);
+        public abstract void bindData(T data);
     }
 }
