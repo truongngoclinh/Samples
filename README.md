@@ -23,7 +23,7 @@ I will manage to update as much as possible in my spare time.
 - ####[x] Tabs layout
   + `path: Samples/app/src/main/java/samples/linhtruong/com/app/tabs`
   + `ref:`[`Androidhive`] (http://www.androidhive.info/2015/09/android-material-design-working-with-tabs/)
-  + custom tabs view [`Tabs custom`] (https://github.com/truongngoclinh/android_dagger2_sample))
+  + `custom tabs view` [`Tabs custom`] (https://github.com/truongngoclinh/android_dagger2_sample)
   
 - ####[x] Integrate Facebook: FacebookSdk, Graph API
   + `path: Samples/app/src/main/java/samples/linhtruong/com/app/facebook`
