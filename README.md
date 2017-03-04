@@ -15,6 +15,7 @@ I will manage to update as much as possible in my spare time.
   + `ref:` [`Androidhive`] (http://www.androidhive.info/2012/10/android-push-notifications-using-google-cloud-messaging-gcm-php-and-mysql/)
   
 - ####[ ] TCP, UDP, HTTP implementation
+  + `HTTP: based on` [`OkHttp`] (https://github.com/square/okhttp)
   + `path:`
   
 - ####[x] App state manager
