@@ -92,7 +92,7 @@ I will manage to update as much as possible in my spare time.
   + `ref:` [`Video tutorials`](https://www.youtube.com/user/TwistedEquations/videos)
   
 - #### [ ] Android clean architecture
-  + `path:`
+  + `path:`
   + `ref:` [`Android clean architecture`](https://github.com/android10/Android-CleanArchitecture)
   
 - #### [ ] 
