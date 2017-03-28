@@ -85,6 +85,7 @@ I will manage to update as much as possible in my spare time.
   + `path: checkout this repo` [`Dagger2`](https://github.com/truongngoclinh/android_dagger2_sample)
   + `ref:` [`Beginner`](https://medium.com/@Miqubel/understanding-dagger-2-367ff1bd184f#.6h6kesto9)
   + `ref:` [`JarkWharton introduction`](https://www.youtube.com/watch?v=plK0zyRLIP8)
+  + `ref:` [`Best explanation imo`](https://www.youtube.com/watch?v=Qwk7ESmaCq0&index=1&list=PLuR1PJnGR-Ih-HXnGSpnqjdhdvqcwhfFU)
   
 - #### [ ] RxJava 2
   + `ref:` [`JarkWharton introduction`](https://www.youtube.com/watch?v=htIXKI5gOQU)
