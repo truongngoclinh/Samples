@@ -4,7 +4,7 @@ In this repo I want to test/demo some Android topics which are common or I've ne
 I will manage to update as much as possible in my spare time.
 
 - [x] **Best Practices**
-  + `path:` checkout this repo `[BestPractices](https://github.com/truongngoclinh/android_BestPractices)
+  + `path:` checkout this repo [`BestPractices`](https://github.com/truongngoclinh/android_BestPractices)
 
 - [x] **Reactive UI design with RxJava**
   + ~~`path: Samples/app/src/main/java/samples/linhtruong/com/app/uireactive`~~
