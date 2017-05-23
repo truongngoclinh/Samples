@@ -12,10 +12,17 @@ import org.androidannotations.annotations.ViewById;
 import rx.Observable;
 import rx.Observer;
 import rx.Subscriber;
+import rx.functions.Action1;
+import rx.functions.Func1;
+import rx.functions.Func2;
 import rx.subjects.PublishSubject;
 import samples.linhtruong.com.app.R;
 import samples.linhtruong.com.base.BaseActivity;
 import samples.linhtruong.com.utils.LogUtils;
+
+import java.math.BigInteger;
+import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by Truong on 9/26/16 - 20:05.
@@ -38,54 +45,32 @@ public class TestRxActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rxtest);
 
-      /*  range(5, 3).subscribe(new Subscriber<Integer>() {
+    }
+
+    void test() {
+  /*      String[] test = {"1", "2", "3", "4", "5", "6"};
+        Observable<String> fast = Observable.interval(2, TimeUnit.SECONDS).map(new Func1<Long, String>() {
             @Override
-            public void onCompleted() {
-
-            }
-
-            @Override
-            public void onError(Throwable e) {
-
-            }
-
-            @Override
-            public void onNext(Integer integer) {
-                LogUtils.d("onNext: " + integer);
-            }
-        });*/
-
-     /*   Observable<Integer> observable = Observable.create(new Observable.OnSubscribe<Integer>() {
-            @Override
-            public void call(final Subscriber<? super Integer> subscriber) {
-                LogUtils.d("Start emitting");
-                Runnable r = new Runnable() {
-                    @Override
-                    public void run() {
-                        while (!subscribedesd.isUnsubscribed()) {p
-                            LogUtils.d("pushed event at thread: " + Thread.currentThread());
-                            subscriber.onNext(1);
-                        }
-                    }
-                };
-
-                final Thread t = new Thread(r);
-                t.start();
-                subscriber.add(new Subscription() {
-                    @Override
-                    public void unsubscribe() {
-                        t.interrupt();
-                    }
-
-                    @Override
-                    public boolean isUnsubscribed() {
-                        return false;
-                    }
-                });
+            public String call(Long aLong) {
+                LogUtils.d("fast emitted: " + aLong);
+                return "F" + aLong;
             }
         });
 
-        final Subscriber<Integer> subscriber = new Subscriber<Integer>() {
+        Observable<String> slow = Observable.interval(5, TimeUnit.SECONDS).map(new Func1<Long, String>() {
+            @Override
+            public String call(Long aLong) {
+                LogUtils.d("slow emitted: " + aLong);
+                return "S" + aLong;
+            }
+        });
+
+       *//* Observable.combineLatest(fast, slow, new Func2<String, String, String>() {
+            @Override
+            public String call(String s, String s2) {
+                return s + ":" + s2;
+            }
+        }).subscribe(new Observer<String>() {
             @Override
             public void onCompleted() {
 
@@ -97,68 +82,27 @@ public class TestRxActivity extends BaseActivity {
             }
 
             @Override
-            public void onNext(Integer integer) {
-                LogUtils.d("Callback: onNext: " + integer + " at thread: " + Thread.currentThread());
-            }
-        };
-
-        observable.subscribe(subscriber);
-
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                subscriber.unsubscribe();
-            }
-        }, 1000);
-
-
-      *//*  range(5, 3).subscribe(new Subscriber<Integer>() {
-            @Override
-            public void onCompleted() {
-
-            }
-
-            @Override
-            public void onError(Throwable e) {
-
-            }
-
-            @Override
-            public void onNext(Integer integer) {
-                LogUtils.d("onNext: " + integer);
+            public void onNext(String s) {
+                LogUtils.d(s + "\n");
             }
         });*//*
-        Observable<Integer> observable = Observable.create(new Observable.OnSubscribe<Integer>() {
+       fast.withLatestFrom(slow, new Func2<String, String, String>() {
+           @Override
+           public String call(String s, String s2) {
+               return s + ":" + s2;
+           }
+       }).subscribe(new Action1<String>() {
+           @Override
+           public void call(String s) {
+               LogUtils.d(s + "\n");
+           }
+       });*/
+        Observable.range(1, 10).scan(BigInteger.ONE, new Func2<BigInteger, Integer, BigInteger>() {
             @Override
-            public void call(final Subscriber<? super Integer> subscriber) {
-                LogUtils.d("Start emitting");
-                Runnable r = new Runnable() {
-                    @Override
-                    public void run() {
-                        while (!subscriber.isUnsubscribed()) {
-                            LogUtils.d("pushed event at thread: " + Thread.currentThread());
-                            subscriber.onNext(1);
-                        }
-                    }
-                };
-
-                final Thread t = new Thread(r);
-                t.start();
-                subscriber.add(new Subscription() {
-                    @Override
-                    public void unsubscribe() {
-                        t.interrupt();
-                    }
-
-                    @Override
-                    public boolean isUnsubscribed() {
-                        return false;
-                    }
-                });
+            public BigInteger call(BigInteger bigInteger, Integer integer) {
+                return bigInteger.multiply(BigInteger.valueOf(integer.intValue()));
             }
-        });
-
-        final Subscriber<Integer> subscriber = new Subscriber<Integer>() {
+        }).subscribe(new Observer<BigInteger>() {
             @Override
             public void onCompleted() {
 
@@ -170,26 +114,64 @@ public class TestRxActivity extends BaseActivity {
             }
 
             @Override
-            public void onNext(Integer integer) {
-                LogUtils.d("Callback: onNext: " + integer + " at thread: " + Thread.currentThread());
+            public void onNext(BigInteger bigInteger) {
+                LogUtils.d(bigInteger.intValue() + " ");
             }
-        };
+        });
 
-        observable.subscribe(subscriber);
-
-        new Handler().postDelayed(new Runnable() {
+        LogUtils.d("reduce operator\n:");
+        Observable.range(1, 10).reduce(BigInteger.ONE, new Func2<BigInteger, Integer, BigInteger>() {
             @Override
-            public void run() {
-                subscriber.unsubscribe();
+            public BigInteger call(BigInteger bigInteger, Integer integer) {
+                return bigInteger.multiply(BigInteger.valueOf(integer.intValue()));
             }
-        }, 1000);
-*/
+        }).subscribe(new Subscriber<BigInteger>() {
+            @Override
+            public void onCompleted() {
+
+            }
+
+            @Override
+            public void onError(Throwable e) {
+
+            }
+
+            @Override
+            public void onNext(BigInteger bigInteger) {
+                LogUtils.d(bigInteger.intValue());
+            }
+        });
+
+        LogUtils.d("reduce mutable accumulator\n:");
+        Observable.range(1, 10).reduce(new ArrayList<String>(), new Func2<ArrayList<String>, Integer, ArrayList<String>>() {
+            @Override
+            public ArrayList<String> call(ArrayList<String> strings, Integer integer) {
+                strings.add(integer.intValue() + "");
+                return strings;
+            }
+        }).subscribe(new Subscriber<ArrayList<String>>() {
+            @Override
+            public void onCompleted() {
+
+            }
+
+            @Override
+            public void onError(Throwable e) {
+
+            }
+
+            @Override
+            public void onNext(ArrayList<String> strings) {
+                LogUtils.d("result: " + strings);
+            }
+        });
     }
 
     @Click(R.id.btnPushEvent)
     void onClickBtnTest() {
         LogUtils.d("Btn push clicked!");
-        subject.onNext("test subject!");
+//        subject.onNext("test subject!");
+        test();
     }
 
     @Click(R.id.btnSubscribe)
