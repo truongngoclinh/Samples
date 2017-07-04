@@ -107,7 +107,7 @@ I will manage to update as much as possible in my spare time.
   + `path:`
   + `ref:`
   
-- [x] **Permission request**
+- [x] **Floating view, Permission request**
   + `path:` [`FloatingLib`](https://github.com/truongngoclinh/FloatingLib/blob/master/app/src/main/java/floatinglib/ved/garena/com/floatinglib/utils/FVPermissionUtils.java)
   
 - [ ] **...**
