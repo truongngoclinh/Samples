@@ -71,7 +71,9 @@ I will manage to update as much as possible in my spare time.
 - [x] **Simple infinite carousel**
   + `path: Samples/app/src/main/java/samples/linhtruong/com/app/infinitecarousel`
   
-- [ ] **Multi-threading**
+- [x] **Multi-threading**
+  + `path: Samples/app/src/main/java/samples/linhtruong/com/app/multithreading`
+  + `ref: [`Efficient Android Threading`](http://shop.oreilly.com/product/0636920029397.do) 
 
 - [ ] **Livestreaming**
   + `path: checkout this repo` [`EzStreaming`](https://github.com/truongngoclinh/ezstreaming)
