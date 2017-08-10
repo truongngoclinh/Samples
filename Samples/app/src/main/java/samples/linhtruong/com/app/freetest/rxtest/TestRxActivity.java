@@ -1,6 +1,8 @@
 package samples.linhtruong.com.app.freetest.rxtest;
 
 import android.os.Bundle;
+import android.os.Handler;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.util.Log;
 import android.widget.Button;
@@ -11,10 +13,14 @@ import org.androidannotations.annotations.ViewById;
 
 import rx.Observable;
 import rx.Observer;
+import rx.Scheduler;
 import rx.Subscriber;
 import rx.functions.Action1;
 import rx.functions.Func1;
 import rx.functions.Func2;
+import rx.internal.schedulers.NewThreadWorker;
+import rx.internal.util.RxThreadFactory;
+import rx.schedulers.Schedulers;
 import rx.subjects.PublishSubject;
 import samples.linhtruong.com.app.R;
 import samples.linhtruong.com.base.BaseActivity;
@@ -22,6 +28,12 @@ import samples.linhtruong.com.utils.LogUtils;
 
 import java.math.BigInteger;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -47,7 +59,77 @@ public class TestRxActivity extends BaseActivity {
 
     }
 
+    void testabc() {
+        Map<String, String> map = new HashMap<>();
+        map.put("key1", "value1");
+
+        map.get("key1");
+
+        for (Map.Entry<String, String> entry : map.entrySet()) {
+            System.out.print(entry.getKey() + " -> " + entry.getValue());
+        }
+    }
+
+    void leotest() {
+        final PublishSubject<Integer> subject = PublishSubject.create();
+        Observable<Integer> obs = subject
+                .subscribeOn(new Scheduler() {
+                    @Override
+                    public Scheduler.Worker createWorker() {
+                        return new NewThreadWorker(new RxThreadFactory("leo-subscribeOn"));
+                    }
+                }).observeOn(new Scheduler() {
+                    @Override
+                    public Worker createWorker() {
+                        return new NewThreadWorker(new RxThreadFactory("leo-observeon"));
+                    }
+                });
+
+        subject.subscribeOn(new Scheduler() {
+            @Override
+            public Worker createWorker() {
+                return new NewThreadWorker(new RxThreadFactory("leo-observeon\n"));
+            }
+        }).subscribe(new Observer<Integer>() {
+            @Override
+            public void onCompleted() {
+                Log.e("linhln", Thread.currentThread().getName() + " - onComplete() called");
+            }
+
+            @Override
+            public void onError(Throwable e) {
+                Log.e("linhln", Thread.currentThread().getName() + " - onError() called with: e = [" + e + "]");
+            }
+
+            @Override
+            public void onNext(Integer integer) {
+                Log.e("linhln", Thread.currentThread().getName() + " - onNext() called with: integer = [" + "]");
+            }
+        });
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                subject.onNext(10);
+            }
+        }, 500);
+    }
+
     void test() {
+        final List<Integer> list = Arrays.asList(1, 2, 3, 4);
+        for (Integer i : list) {
+            if (i % 2 == 0) {
+                System.out.println(i);
+            }
+        }
+
+        subject = (PublishSubject<String>) subject.subscribeOn(Schedulers.newThread());
+
+        Observable<String> test;
+        Observer<String> test2;
+
+        String result = "abc";
+        String mesasge = result != null ? result : "empty";
   /*      String[] test = {"1", "2", "3", "4", "5", "6"};
         Observable<String> fast = Observable.interval(2, TimeUnit.SECONDS).map(new Func1<Long, String>() {
             @Override
@@ -97,7 +179,7 @@ public class TestRxActivity extends BaseActivity {
                LogUtils.d(s + "\n");
            }
        });*/
-        Observable.range(1, 10).scan(BigInteger.ONE, new Func2<BigInteger, Integer, BigInteger>() {
+   /*     Observable.range(1, 10).scan(BigInteger.ONE, new Func2<BigInteger, Integer, BigInteger>() {
             @Override
             public BigInteger call(BigInteger bigInteger, Integer integer) {
                 return bigInteger.multiply(BigInteger.valueOf(integer.intValue()));
@@ -164,14 +246,47 @@ public class TestRxActivity extends BaseActivity {
             public void onNext(ArrayList<String> strings) {
                 LogUtils.d("result: " + strings);
             }
-        });
+        });*/
+/*
+        final Observable<Integer> randomIntObs = Observable.create(new Observable.OnSubscribe<Integer>() {
+            @Override
+            public void call(Subscriber<? super Integer> subscriber) {
+                Random random = new Random();
+                while (!subscriber.isUnsubscribed()) {
+                    subscriber.onNext(random.nextInt(10));
+                }
+            }
+        }).distinct().take(20);
+
+        final Observer<Integer> observer = new Observer<Integer>() {
+            @Override
+            public void onCompleted() {
+
+            }
+
+            @Override
+            public void onError(Throwable e) {
+
+            }
+
+            @Override
+            public void onNext(Integer integer) {
+                LogUtils.d(integer.intValue() + "\n");
+            }
+        };
+
+        randomIntObs.subscribe(observer);*/
+
+        Observable<Boolean> trueFalse = Observable.just(true, false).repeat();
+
     }
 
     @Click(R.id.btnPushEvent)
     void onClickBtnTest() {
         LogUtils.d("Btn push clicked!");
 //        subject.onNext("test subject!");
-        test();
+//        test();
+        leotest();
     }
 
     @Click(R.id.btnSubscribe)
