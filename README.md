@@ -109,4 +109,8 @@ I will manage to update as much as possible in my spare time.
 - [x] **Floating view, Permission request**
   + `path:` [`FloatingLib`](https://github.com/truongngoclinh/FloatingLib/blob/master/app/src/main/java/floatinglib/ved/garena/com/floatinglib/utils/FVPermissionUtils.java)
   
+- [x] **IO2017 - Arch: ViewModel, LiveData, Room**
+  + `path:`
+  + `ref:`
+  
 - [ ] **...**
