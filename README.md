@@ -80,11 +80,11 @@ I will manage to update as much as possible in my spare time.
   
 - [ ] **Testing: Unit tests, Integration tests (Expresso, Expresso + Dagger 2, JUnit, Mockito, Roboelectric...)**
   + Unit test: local tests (local JVM), intrumentation tests (Android platform)
-    + `path: checkout this repo [`Dagger2`](https://github.com/truongngoclinh/android_dagger2_sample)`
+    + `path: checkout this repo`[`Dagger2`](https://github.com/truongngoclinh/android_dagger2_sample)`
     + `ref:`
     
   + Integration tests
-    + `path: checkout this repo [`Dagger2`](https://github.com/truongngoclinh/android_dagger2_sample)`
+    + `path: checkout this repo`[`Dagger2`](https://github.com/truongngoclinh/android_dagger2_sample)`
     + `ref:`
   
 - [x] **DI with Dagger 2: module, component, @singleton, @scope, @inject...**
