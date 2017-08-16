@@ -88,6 +88,12 @@
             android:text="Simple carousel" />
 
         <Button
+            android:id="@+id/msgTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android message passing test" />
+
+        <Button
             android:id="@+id/undefine"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

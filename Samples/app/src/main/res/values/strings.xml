@@ -32,5 +32,8 @@
     <string name="action_logout">Logout</string>
     <string name="action_mark_all_read">Mark All as Read</string>
     <string name="privacy_policy">Privacy Policy</string>
+    <string name="label_send">Send</string>
+    <string name="label_send_once">Send once</string>
+
 
 </resources>

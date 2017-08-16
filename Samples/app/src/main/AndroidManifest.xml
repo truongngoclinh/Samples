@@ -72,6 +72,10 @@
             android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait" />
         <activity
+            android:name=".multithreading.threadcommunication.AndroidMessagePassing_"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".dagger2.DaggerTestActivity_"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />

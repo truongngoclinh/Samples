@@ -17,6 +17,7 @@ import samples.linhtruong.com.app.freetest.rxtest.TestRxComponentsActivity_;
 import samples.linhtruong.com.app.freetest.rxtest.TestRxDownloadFileActivity_;
 import samples.linhtruong.com.app.infinitecarousel.BannerActivity_;
 import samples.linhtruong.com.app.lrucache.LruCacheTestActivity_;
+import samples.linhtruong.com.app.multithreading.threadcommunication.AndroidMessagePassing_;
 import samples.linhtruong.com.app.tabs.TabHostActivity_;
 import samples.linhtruong.com.app.tabs.TabPagerActivity_;
 import samples.linhtruong.com.app.regex.TestRegexActivity_;
@@ -118,7 +119,15 @@ public class MainActivity extends BaseActivity {
                 BannerActivity_.intent(activity).start();
             }
         });
+
+        findViewById(R.id.msgTest).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AndroidMessagePassing_.intent(activity).start();
+            }
+        });
     }
+
 
     @Override
     protected void onDestroy() {

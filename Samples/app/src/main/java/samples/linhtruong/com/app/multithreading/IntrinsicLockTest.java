@@ -16,6 +16,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  * - block-level lock & release monitor with a lock object (synchronized(object), object.wait(), object.notify)
  * - block-level just lock the enclosing object instance (synchronized(this)), enclosing class instance (synchronized(this.getClass())
  * - method-level just lock the enclosing object instance (synchronized(method)), enclosing class instance (synchronized(static method))
+ * - replace sychronized keyword with reentrantLock
  *
  *
  * @author linhtruong
@@ -58,7 +59,7 @@ public class IntrinsicLockTest {
         mConsumer.start();
     }
 
-    public static class ConsumerProducer {
+    private static class ConsumerProducer {
 
         public ConsumerProducer() {
             System.out.println("Created CP");
