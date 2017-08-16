@@ -113,4 +113,9 @@ I will manage to update as much as possible in my spare time.
   + `path:`
   + `ref:`
   
+- [ ] **Design Pattern**
+  + `path: Samples/app/src/main/java/samples/linhtruong/com/app/designpattern`
+  + `ref:` [`Head First Design Pattern`](http://shop.oreilly.com/product/9780596007126.do)
+  + `ref:`
+  
 - [ ] **...**
