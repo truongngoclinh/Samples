@@ -6,6 +6,8 @@ import android.os.Message;
 import android.os.MessageQueue;
 import android.os.SystemClock;
 import android.support.annotation.NonNull;
+import android.util.Log;
+import android.util.LogPrinter;
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;
@@ -27,6 +29,11 @@ import java.util.concurrent.atomic.AtomicInteger;
  * <p>
  * User clicks send button will signal worker thread to do long task.
  *
+ * Notes:
+ * - {@link android.os.Handler} The Handler.Callback inteface doesnt override handleMessage() method of a handler
+ *   + return true to handle this message
+ *   + return false to pass the message to the handlers own method, handleMessage()
+ *
  * @author linhtruong
  * @date 8/16/17 - 15:22.
  * @organization VED
@@ -36,6 +43,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class AndroidMessagePassing extends BaseActivity {
 
     private static final int MSG_SIGNAL = 0;
+    public static final String MSG_QUEUE_LOG = "message_queue_log";
 
     private LooperThread mLooperThread;
 
@@ -170,6 +178,12 @@ public class AndroidMessagePassing extends BaseActivity {
                     System.out.println("received a msg #" + msg.what + " processedCount = " + mMsgProcessedCount);
                 }
             };
+
+            // for tracing messasge queue
+            mHandler.dump(new LogPrinter(Log.DEBUG, MSG_QUEUE_LOG), "'");
+            Looper.myLooper().setMessageLogging(new LogPrinter(Log.DEBUG, MSG_QUEUE_LOG));
+            //
+
             Looper.myQueue().addIdleHandler(this);
             Looper.loop();
         }
@@ -184,7 +198,7 @@ public class AndroidMessagePassing extends BaseActivity {
             }
 
             if (mMsgProcessedCount >= MSG_PROCESSING_LIMIT) {
-                System.out.println("TERMINATE consumer thread, stopped to listen dispatched msg.");
+                System.out.println("TERMINATE looper, stopped to listen dispatched msg. Thread continues running remaining path of code.");
                 mHandler.getLooper().quit();
                 return false;
             }
