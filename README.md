@@ -118,4 +118,8 @@ I will manage to update as much as possible in my spare time.
   + `ref:` [`Head First Design Pattern`](http://shop.oreilly.com/product/9780596007126.do)
   + `ref:`
   
+- [ ] **QR Code**
+  + `path:`
+  + `ref:`
+  
 - [ ] **...**
