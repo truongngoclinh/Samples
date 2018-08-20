@@ -125,5 +125,10 @@ I will manage to update as much as possible in my spare time.
 - [ ] **Java 8**
   + `path:`
   + `ref:`
+
+- [ ] **Android O background service limitation**
+  + `path:`
+  + `ref:`
+    
     
 - [ ] **...**
