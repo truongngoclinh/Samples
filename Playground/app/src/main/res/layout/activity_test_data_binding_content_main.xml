@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="handlers"
+            type="samples.linhtruong.com.playground.java.google_arch.test.DataBindingClickHandlers" />
+        <variable
+            name="user"
+            type="samples.linhtruong.com.playground.java.google_arch.test.DataBindingModel" />
+        <import type="samples.linhtruong.com.playground.java.utils.StringUtils"/>
+    </data>
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/fab_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".MainActivity"
+        tools:showIn="@layout/activity_main">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{user.firstName}" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{StringUtils.capitalize(user.lastName)}" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{(v) -> handlers.onBtnClicked(v, user)}"
+            android:text="CLICK" />
+
+     <!--   <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onLongClick="@{(v) -> handlers.onBtnLongPressed(v, user)"
+            android:text="LONG PRESS" />-->
+
+    </LinearLayout>
+</layout>

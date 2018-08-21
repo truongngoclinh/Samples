@@ -2,7 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="samples.linhtruong.com.playground">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
+        android:name=".java.base.BaseApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -16,6 +19,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".java.google_arch.test.DataBindingActivity"
+            android:label="@string/activity_data_binding_test"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".java.google_arch.test.databinding_profile_sample.view.ProfileActivity"
+            android:label="@string/activity_data_binding_test"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
-
 </manifest>

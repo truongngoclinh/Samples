@@ -6,15 +6,29 @@ ext.versions = [
         compileSdk      : 27,
 
         // kotlin
-        kotlin          : '1.2.50',
+        kotlin          : '1.2.51',
 
         // android
         supportLibs     : '27.1.1',
-        constraintLayout: '1.1.2'
+        constraintLayout: '1.1.2',
+
+        // arch
+        lifecycle       : '1.1.1',
+        room            : '1.1.1',
+        paging          : '1.0.0',
+        nav             : "1.0.0-alpha05",
+        work            : '1.0.0-alpha07',
 
         // 3rd
+        glide           : '4.6.1',
+        picasso         : '2.71828',
 
+        // test
+        junit           : '4.12',
+        runner          : '1.0.1',
+        expresso        : '3.0.1',
 ]
+
 ext.libraries = [
         // android
         supportAnnotations : "com.android.support:support-annotations:$versions.supportLibs",
@@ -23,9 +37,30 @@ ext.libraries = [
         supportRecyclerView: "com.android.support:recyclerview-v7:$versions.supportLibs",
         support            : "com.android.support:support-v4:$versions.supportLibs",
 
+        // arch
+        lifecycle          : "android.arch.lifecycle:extensions:$versions.lifecycle",
+        lifecycleCompiler  : "android.arch.lifecycle:compiler:$versions.lifecycle",
+        lifecycleJava8     : "android.arch.lifecycle:common-java8:$versions.lifecycle",
+        reactiveStream     : "android.arch.lifecycle:reactivestreams:$versions.lifecycle",
+        room               : "android.arch.persistence.room:runtime:$versions.room",
+        roomCompiler       : "android.arch.persistence.room:compiler:$versions.room",
+        roomRx             : "android.arch.persistence.room:rxjava2:$versions.room",
+        paging             : "android.arch.paging:runtime:$versions.paging",
+        navFragment        : "android.arch.navigation:navigation-fragment:$versions.nav",
+        navFragment        : "android.arch.navigation:navigation-ui:$versions.nav",
+        workManager        : "android.arch.work:work-runtime:$versions.work",
+
         // kotlin
         kotlin             : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$versions.kotlin",
 
         // 3rd
         constraintLayout   : "com.android.support.constraint:constraint-layout:$versions.constraintLayout",
+        glide              : "com.github.bumptech.glide:glide:$versions.glide",
+        glideCompiler      : "com.github.bumptech.glide:compiler:$versions.glide",
+        picasso            : "com.squareup.picasso:picasso:$versions.picasso",
+
+        // test
+        junit              : "junit:junit:$versions.junit",
+        runner             : "com.android.support.test:runner:$versions.runner",
+        expresso           : "com.android.support.test.espresso:espresso-core:$versions.expresso"
 ]
