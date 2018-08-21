@@ -110,8 +110,8 @@ I will manage to update as much as possible in my spare time.
   + `path:` [`FloatingLib`](https://github.com/truongngoclinh/FloatingLib/blob/master/app/src/main/java/floatinglib/ved/garena/com/floatinglib/utils/FVPermissionUtils.java)
   
 - [ ] **IO2017 - Arch: ViewModel, LiveData, Room**
-  + `path:`
-  + `ref:`
+  + `path: Playground/app/src/main/java/samples/linhtruong/com/playground/java/google_arch`
+  + `ref:` [`Google guide`](https://developer.android.com/topic/libraries/architecture/)
   
 - [ ] **Design Pattern**
   + `path: Samples/app/src/main/java/samples/linhtruong/com/app/designpattern`
