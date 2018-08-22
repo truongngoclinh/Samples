@@ -109,9 +109,10 @@ I will manage to update as much as possible in my spare time.
 - [x] **Floating view, Permission request**
   + `path:` [`FloatingLib`](https://github.com/truongngoclinh/FloatingLib/blob/master/app/src/main/java/floatinglib/ved/garena/com/floatinglib/utils/FVPermissionUtils.java)
   
-- [ ] **IO2017 - Arch: ViewModel, LiveData, Room, DataBinding, Paging, WorkManager, Navigation**
+- [x] **IO2017 - Arch: ViewModel, LiveData, Room, DataBinding, Paging, WorkManager, Navigation**
   + `path: Playground/app/src/main/java/samples/linhtruong/com/playground/java/google_arch/test`
-  + `ref:` [`Google guide`](https://developer.android.com/topic/libraries/architecture/)
+  + `ref:` [`Google guide`](https://developer.android.com/topic/libraries/architecture/) 
+  + `ref:` ['Android pub`](https://android.jlelse.eu/android-architecture-components-room-migration-1a269e1aeef7)
   
 - [ ] **Design Pattern**
   + `path: Samples/app/src/main/java/samples/linhtruong/com/app/designpattern`
