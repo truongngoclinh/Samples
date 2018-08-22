@@ -2,8 +2,6 @@
 In this repo I want to test/demo some Android topics which are common or I've never tried or something I gained during working time. So it is just for learning and references.
 
 I will manage to update as much as possible in my spare time.
-`Samples` is old project.
-`Playground` works with lastest Android Studio, android support libs, kotlin also.
 
 - [x] **Reactive UI design with RxJava**
   + ~~`path: Samples/app/src/main/java/samples/linhtruong/com/app/uireactive`~~
