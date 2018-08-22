@@ -113,6 +113,7 @@ I will manage to update as much as possible in my spare time.
   + `path: Playground/app/src/main/java/samples/linhtruong/com/playground/java/google_arch/test`
   + `ref:` [`Google guide`](https://developer.android.com/topic/libraries/architecture/) 
   + `ref:` [`Android pub`](https://android.jlelse.eu/android-architecture-components-room-migration-1a269e1aeef7)
+  + `ref:` [`Codelabs`](https://codelabs.developers.google.com/codelabs/android-lifecycles/)
   
 - [ ] **Design Pattern**
   + `path: Samples/app/src/main/java/samples/linhtruong/com/app/designpattern`
