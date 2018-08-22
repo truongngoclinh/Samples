@@ -110,7 +110,7 @@ I will manage to update as much as possible in my spare time.
   + `path:` [`FloatingLib`](https://github.com/truongngoclinh/FloatingLib/blob/master/app/src/main/java/floatinglib/ved/garena/com/floatinglib/utils/FVPermissionUtils.java)
   
 - [ ] **IO2017 - Arch: ViewModel, LiveData, Room, DataBinding, Paging, WorkManager, Navigation**
-  + `path: Playground/app/src/main/java/samples/linhtruong/com/playground/java/google_arch`
+  + `path: Playground/app/src/main/java/samples/linhtruong/com/playground/java/google_arch/test`
   + `ref:` [`Google guide`](https://developer.android.com/topic/libraries/architecture/)
   
 - [ ] **Design Pattern**
@@ -122,9 +122,10 @@ I will manage to update as much as possible in my spare time.
   + `path:`
   + `ref:`
   
-- [ ] **Java 8**
-  + `path:`
-  + `ref:`
+- [x] **Java 8**
+  + `path: samples/linhtruong/com/playground/java/google_arch/test/room_test`
+  + `ref: [callicoder lamda](https://www.callicoder.com/java-lambda-expression-tutorial/)`
+  + `ref: [callicoder callable and future](https://www.callicoder.com/java-callable-and-future-tutorial/)`
 
 - [ ] **Android O background service limitation**
   + `path:`
