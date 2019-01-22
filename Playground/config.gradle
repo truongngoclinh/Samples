@@ -7,6 +7,7 @@ ext.versions = [
 
         // kotlin
         kotlin          : '1.2.51',
+        rx2             : '2.3.0',
 
         // android
         supportLibs     : '27.1.1',
@@ -52,6 +53,7 @@ ext.libraries = [
 
         // kotlin
         kotlin             : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$versions.kotlin",
+        rx2                : "io.reactivex.rxjava2:rxkotlin:$versions.rx2",
 
         // 3rd
         constraintLayout   : "com.android.support.constraint:constraint-layout:$versions.constraintLayout",

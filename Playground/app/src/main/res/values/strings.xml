@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">Playground</string>
     <string name="activity_data_binding_test">DataBindingTest</string>
+    <string name="activity_view_model_test">ViewModelTest</string>
     <string name="activity_profile_sample">Profile Sample</string>
+    <string name="activity_live_data_sample">Fruits</string>
     <!-- The class name to the ScrollingChildBehavior required for AppBarLayout -->
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
 

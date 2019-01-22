@@ -27,5 +27,21 @@
             android:name=".java.google_arch.test.databinding_profile_sample.view.ProfileActivity"
             android:label="@string/activity_data_binding_test"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".java.google_arch.test.viewmodel_test.UsersActivity"
+            android:label="@string/activity_data_binding_test"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".java.google_arch.test.livedata_test.FruitsActivity"
+            android:label="@string/activity_data_binding_test"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".java.google_arch.test.room_test.RoomTestActivity"
+            android:label="@string/activity_data_binding_test"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".java.utils.CardViewActivity"
+            android:label="@string/activity_data_binding_test"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 </manifest>
