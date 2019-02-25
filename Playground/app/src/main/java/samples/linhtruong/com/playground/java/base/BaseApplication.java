@@ -1,6 +1,7 @@
 package samples.linhtruong.com.playground.java.base;
 
 import android.app.Application;
+import timber.log.Timber;
 
 /**
  * CLASS DESCRIPTION
@@ -14,5 +15,6 @@ public class BaseApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
+        Timber.plant(new Timber.DebugTree());
     }
 }

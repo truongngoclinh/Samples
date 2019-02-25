@@ -8,6 +8,7 @@ import samples.linhtruong.com.playground.java.google_arch.test.livedata_test.Fru
 import samples.linhtruong.com.playground.java.google_arch.test.room_test.RoomTestActivity;
 import samples.linhtruong.com.playground.java.google_arch.test.viewmodel_test.UsersActivity;
 import samples.linhtruong.com.playground.java.utils.CardViewActivity;
+import samples.linhtruong.com.playground.kotlin.google_arch.livedata.LiveDataActivityTest;
 
 /**
  * CLASS DESCRIPTION
@@ -39,5 +40,9 @@ public class Navigators {
 
     public static void navigateViewModelTestActivity(Activity activity) {
         activity.startActivity(new Intent(activity, UsersActivity.class));
+    }
+
+    public static void navigateLiveDataServiceTestActivity(Activity activity) {
+        activity.startActivity(new Intent(activity, LiveDataActivityTest.class));
     }
 }
