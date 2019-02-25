@@ -23,6 +23,8 @@ ext.versions = [
         // 3rd
         glide           : '4.6.1',
         picasso         : '2.71828',
+        timber          : '4.7.1',
+        dagger          : '2.21',
 
         // test
         junit           : '4.12',
@@ -60,6 +62,9 @@ ext.libraries = [
         glide              : "com.github.bumptech.glide:glide:$versions.glide",
         glideCompiler      : "com.github.bumptech.glide:compiler:$versions.glide",
         picasso            : "com.squareup.picasso:picasso:$versions.picasso",
+        timber             : "com.jakewharton.timber:timber:$versions.timber",
+        dagger             : "com.google.dagger:dagger:$versions.dagger",
+        daggerCompiler     : "com.google.dagger:dagger-compiler:$versions.dagger",
 
         // test
         junit              : "junit:junit:$versions.junit",

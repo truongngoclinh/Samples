@@ -10,5 +10,9 @@ import android.app.Application;
  * @organization VED
  */
 public class BaseApplication extends Application {
+    @Override
+    public void onCreate() {
+        super.onCreate();
 
+    }
 }

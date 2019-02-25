@@ -52,6 +52,9 @@ dependencies {
     // 3rd
     implementation libraries.picasso
     implementation libraries.supportRecyclerView
+    implementation libraries.timber
+    kapt libraries.daggerCompiler
+    implementation libraries.dagger
 
     testImplementation libraries.junit
     androidTestImplementation libraries.runner
