@@ -78,14 +78,10 @@ I will manage to update as much as possible in my spare time.
 - [ ] **Livestreaming**
   + `path: checkout this repo` [`EzStreaming`](https://github.com/truongngoclinh/ezstreaming)
   
-- [ ] **Testing: Unit tests, Integration tests (Expresso, Expresso + Dagger 2, JUnit, Mockito, Roboelectric...)**
-  + Unit test: local tests (local JVM), intrumentation tests (Android platform)
-    + `path: checkout this repo`[`Dagger2`](https://github.com/truongngoclinh/android_dagger2_sample)
-    + `ref:`
-    
-  + Integration tests
-    + `path: checkout this repo`[`Dagger2`](https://github.com/truongngoclinh/android_dagger2_sample)
-    + `ref:`
+- [ ] **Testing: Unit tests, Integration tests, UI tests (Expresso, Expresso + Dagger 2, JUnit, Mockito, Roboelectric...)**
+  + `path: BaseProject/app/src/test`
+  + `path: BaseProject/app/src/androidTest`
+  + `ref:` [`Google guide`]()
   
 - [x] **DI with Dagger 2: module, component, @singleton, @scope, @inject...**
   + `path: checkout this repo` [`Dagger2`](https://github.com/truongngoclinh/android_dagger2_sample)
