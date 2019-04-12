@@ -1,0 +1,91 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    def config = rootProject.extensions.getByName("ext")
+
+    compileSdkVersion config["compile_sdk"]
+    buildToolsVersion config["build_tools"]
+
+    defaultConfig {
+        applicationId config["application_id"]
+        minSdkVersion config["min_sdk"]
+        targetSdkVersion config["target_sdk"]
+        versionCode config["version_code"]
+        versionName config["version_name"]
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file('../misc/keystore/debug.keystore')
+            storePassword 'android'
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            v2SigningEnabled false
+        }
+    }
+
+    testOptions {
+        unitTests {
+            returnDefaultValues true
+        }
+    }
+
+    sourceSets {
+        test.resources.srcDirs += 'src/test/resources'
+    }
+
+    lintOptions {
+        quiet true
+        abortOnError false
+        ignoreWarnings true
+        disable 'ContentDescription'
+    }
+}
+
+dependencies {
+    def appDeps = rootProject.ext.main
+    def unitTestDeps = rootProject.ext.unitTesting
+    def devDeps = rootProject.ext.development
+
+    kapt appDeps.archComponentsCompiler
+    kapt appDeps.daggerCompiler
+
+    implementation appDeps.kotlin
+    implementation appDeps.appCompat
+    implementation appDeps.gson
+    implementation appDeps.archComponents
+    implementation appDeps.recyclerView
+    implementation appDeps.design
+    implementation appDeps.dagger
+    implementation appDeps.retrofit
+    implementation appDeps.retrofitRxjavaAdapter
+    implementation appDeps.retrofitGsonConverter
+    implementation appDeps.okhttpLoggingInterceptor
+    implementation appDeps.timber
+    implementation appDeps.rxJava
+    implementation appDeps.rxAndroid
+    implementation appDeps.glide
+
+    testImplementation unitTestDeps.junit
+    testImplementation unitTestDeps.mockito
+
+    debugImplementation devDeps.leakCanary
+    releaseImplementation devDeps.leakCanaryNoop
+    testImplementation devDeps.leakCanaryNoop
+}

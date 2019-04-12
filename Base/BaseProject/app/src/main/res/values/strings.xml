@@ -1,0 +1,7 @@
+<resources>
+    <string name="label_app_name">TechNewsSample</string>
+    <string name="label_full_story">Full Story</string>
+
+    <string name="error_network_connection">Network Connection Error</string>
+    <string name="error_story_link_invalid">Sorry, this story link is broken</string>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--regular-->
+    <style name="Roboto">
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="Roboto.16">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Roboto.18">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!--medium-->
+    <style name="RobotoM">
+        <item name="fontFamily">@font/robotom</item>
+    </style>
+
+    <style name="RobotoM.18">
+        <item name="android:textSize">18sp</item>
+    </style>
+</resources>

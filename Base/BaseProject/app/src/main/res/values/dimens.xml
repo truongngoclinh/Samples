@@ -1,0 +1,11 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="toolbar_icon_default_size">30dp</dimen>
+    <dimen name="toolbar_default_height">56dp</dimen>
+    <dimen name="list_default_height">54dp</dimen>
+    <dimen name="button_default_height">50dp</dimen>
+    <dimen name="loading_indicator_size">48dp</dimen>
+    <dimen name="news_detail_photo_size_width">210dp</dimen>
+    <dimen name="news_detail_photo_size_height">140dp</dimen>
+</resources>

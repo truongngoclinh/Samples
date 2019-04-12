@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="news_detail_photo_size_width">400dp</dimen>
+    <dimen name="news_detail_photo_size_height">200dp</dimen>
+</resources>
