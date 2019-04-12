@@ -132,6 +132,13 @@ I will manage to update as much as possible in my spare time.
 - [ ] **Android O background service limitation**
   + `path:`
   + `ref:`
-    
-    
+
+- [x] **Testing: unit test, ui test, integration test**
+  + `path: BaseProject/app/src/test`
+  + `path: BaseProject/app/src/androidTest`
+  + `ref:` [`Google guide`]()
+
+- [x] **Immerse in tablet**
+  + `path: BaseProject/app/src/`
+
 - [ ] **...**
