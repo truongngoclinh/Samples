@@ -43,5 +43,11 @@
             android:name=".java.utils.CardViewActivity"
             android:label="@string/activity_data_binding_test"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kotlin.google_arch.livedata.LiveDataActivityTest"
+            android:label="@string/activity_data_binding_test"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service android:name=".kotlin.google_arch.livedata.LiveDataServiceTest"></service>
     </application>
 </manifest>

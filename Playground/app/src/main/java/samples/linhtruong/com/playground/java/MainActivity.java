@@ -28,6 +28,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         findViewById(R.id.btnFruitsSample).setOnClickListener(this);
         findViewById(R.id.btnRoomTest).setOnClickListener(this);
         findViewById(R.id.btnCardViewTest).setOnClickListener(this);
+        findViewById(R.id.btnLiveDataServiceTest).setOnClickListener(this);
     }
 
     @Override
@@ -55,6 +56,10 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
             case R.id.btnRoomTest:
                 Navigators.navigateRoomTestActivity(this);
+                break;
+
+            case R.id.btnLiveDataServiceTest:
+                Navigators.navigateLiveDataServiceTestActivity(this);
                 break;
 
             default:
