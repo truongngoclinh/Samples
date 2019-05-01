@@ -78,7 +78,7 @@ I will manage to update as much as possible in my spare time.
 - [ ] **Livestreaming**
   + `path: checkout this repo` [`EzStreaming`](https://github.com/truongngoclinh/ezstreaming)
   
-- [ ] **Testing: Unit tests, Integration tests, UI tests (Expresso, Expresso + Dagger 2, JUnit, Mockito, Roboelectric...)**
+- [x] **Testing: Unit tests, Integration tests, UI tests (Expresso, Expresso + Dagger 2, JUnit, Mockito, Roboelectric...)**
   + `path: BaseProject/app/src/test`
   + `path: BaseProject/app/src/androidTest`
   + `ref:` [`Google guide`]()
