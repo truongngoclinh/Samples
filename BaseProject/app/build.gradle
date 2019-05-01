@@ -16,6 +16,7 @@ android {
         versionCode config["version_code"]
         versionName config["version_name"]
         vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
@@ -43,6 +44,7 @@ android {
     testOptions {
         unitTests {
             returnDefaultValues true
+            includeAndroidResources = true
         }
     }
 
@@ -62,6 +64,7 @@ dependencies {
     def appDeps = rootProject.ext.main
     def unitTestDeps = rootProject.ext.unitTesting
     def devDeps = rootProject.ext.development
+    def acceptanceDeps = rootProject.ext.acceptanceTesting
 
     kapt appDeps.archComponentsCompiler
     kapt appDeps.daggerCompiler
@@ -83,9 +86,21 @@ dependencies {
     implementation appDeps.glide
 
     testImplementation unitTestDeps.junit
-    testImplementation unitTestDeps.mockito
+    testImplementation unitTestDeps.kluent
+    testImplementation unitTestDeps.mockitoKotlin
+    testImplementation unitTestDeps.mockitoInline
+    testImplementation unitTestDeps.robolectric
+
+    androidTestImplementation acceptanceDeps.rule
+    androidTestImplementation acceptanceDeps.runner
+    androidTestImplementation acceptanceDeps.expresso
+    androidTestImplementation acceptanceDeps.expressoContrib
 
     debugImplementation devDeps.leakCanary
     releaseImplementation devDeps.leakCanaryNoop
     testImplementation devDeps.leakCanaryNoop
+}
+
+configurations.all {
+    resolutionStrategy.force rootProject.ext.main.appSupport
 }

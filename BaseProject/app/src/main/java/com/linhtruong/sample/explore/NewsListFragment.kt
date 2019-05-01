@@ -34,7 +34,7 @@ class NewsListFragment : BaseFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initNewsList()
-        mainViewModel.getNews()
+        mainViewModel.requestNews()
     }
 
     private fun handleNews(news: ArrayList<NewsEntity>?) {

@@ -1,6 +1,7 @@
 package com.linhtruong.sample.explore
 
 import android.arch.lifecycle.MutableLiveData
+import com.linhtruong.sample.core.exception.Failure
 import com.linhtruong.sample.core.platform.base.BaseViewModel
 import com.linhtruong.sample.explore.model.NewsDetailEntity
 import com.linhtruong.sample.explore.model.NewsEntity
@@ -16,9 +17,16 @@ import javax.inject.Inject
 class MainViewModel
 @Inject constructor(private val repository: MainRepository) : BaseViewModel() {
     var news = MutableLiveData<ArrayList<NewsEntity>>()
-    fun getNews() {
+    fun requestNews() {
         loadingStatus.postValue(true)
-        addDisposable(repository.getNews { it.either(::handleFailure, ::handleNewsResponse) })
+        addDisposable(repository.getNews().subscribe(
+                {
+                    handleNewsResponse(it)
+                },
+                {
+                    handleFailure(Failure.ExceptionError(it))
+                }
+        ))
     }
 
     private fun handleNewsResponse(response: NewsResponse) {
@@ -28,7 +36,6 @@ class MainViewModel
 
     var newsDetail = MutableLiveData<NewsDetailEntity>()
     fun updateDetail(detail: NewsDetailEntity) {
-        Timber.d("updateDetail postValue")
         newsDetail.postValue(detail)
     }
 }

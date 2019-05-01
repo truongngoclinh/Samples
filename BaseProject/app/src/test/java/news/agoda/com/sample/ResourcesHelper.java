@@ -8,6 +8,7 @@ import java.nio.charset.StandardCharsets;
  * @author linhtruong
  */
 public class ResourcesHelper {
+
     public static String fromAsset(Class classname, String fileName) {
         String json = "";
         try {

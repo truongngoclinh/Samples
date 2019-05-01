@@ -1,10 +1,12 @@
-package news.agoda.com.sample;
+package news.agoda.com.sample.explore.model;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 import com.linhtruong.sample.core.network.adapter.NullAsEmptyStringAdapter;
 import com.linhtruong.sample.explore.model.NewsEntity;
+import news.agoda.com.sample.ResourcesHelper;
+import news.agoda.com.sample.UnitTest;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.MockitoAnnotations;
@@ -17,7 +19,7 @@ import static org.junit.Assert.*;
 /**
  * @author linhtruong
  */
-public class NewsEntityTest {
+public class NewsEntityTest extends UnitTest {
     private Gson gson;
     private NewsEntity news;
 
@@ -30,7 +32,6 @@ public class NewsEntityTest {
         gson = new GsonBuilder()
                 .registerTypeAdapterFactory(new NullAsEmptyStringAdapter())
                 .create();
-        MockitoAnnotations.initMocks(this);
     }
 
     @Test

@@ -21,7 +21,7 @@ abstract class BaseViewModel : ViewModel() {
     var loadingStatus: MutableLiveData<Boolean> = MutableLiveData()
 
     open fun handleFailure(failure: Failure?) {
-        this.failure.value = failure
+        this.failure.postValue(failure)
     }
 
     fun addDisposable(disposable: Disposable) {

@@ -1,9 +1,11 @@
-package news.agoda.com.sample;
+package news.agoda.com.sample.explore.model;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.linhtruong.sample.core.network.adapter.NullAsEmptyStringAdapter;
 import com.linhtruong.sample.explore.model.MediaEntity;
+import news.agoda.com.sample.ResourcesHelper;
+import news.agoda.com.sample.UnitTest;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -12,7 +14,7 @@ import static org.junit.Assert.*;
 /**
  * @author linhtruong
  */
-public class MediaEntityTest {
+public class MediaEntityTest extends UnitTest {
     private Gson gson;
     private MediaEntity media;
 
