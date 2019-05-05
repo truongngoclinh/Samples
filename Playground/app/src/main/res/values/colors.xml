@@ -6,4 +6,12 @@
 
     <!--  Profile -->
     <color name="profile_meta">#333</color>
+
+    <!-- FanView -->
+    <color name="red1">#FF2222</color>
+    <color name="green1">#22FF22</color>
+    <color name="blue1">#2222FF</color>
+    <color name="cyan1">#22FFFF</color>
+    <color name="gray1">#8888AA</color>
+    <color name="yellow1">#ffff22</color>
 </resources>

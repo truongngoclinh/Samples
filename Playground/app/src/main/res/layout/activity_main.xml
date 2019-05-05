@@ -47,4 +47,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="LiveDataServiceTest" />
+
+    <Button
+        android:id="@+id/btnCustomViewTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CustomViewTest" />
 </LinearLayout>

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="samples.linhtruong.com.playground">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name=".java.base.BaseApplication"
@@ -11,7 +12,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".java.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -47,6 +49,9 @@
             android:name=".kotlin.google_arch.livedata.LiveDataActivityTest"
             android:label="@string/activity_data_binding_test"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".java.custom_views.FanControllerActivity"
+            android:label="CustomViewTest" />
 
         <service android:name=".kotlin.google_arch.livedata.LiveDataServiceTest"></service>
     </application>

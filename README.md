@@ -137,4 +137,9 @@ I will manage to update as much as possible in my spare time.
 - [x] **Immerse in tablet**
   + `path: BaseProject/app/src/`
 
+- [x] **Custom View**
+  + `path: samples/linhtruong/com/playground/java/custom_views/`
+  + `ref` [`Google Advanced Codelab`](https://codelabs.developers.google.com/codelabs/advanced-android-training-custom-view-from-scratch/)
+  + `performance problem`
+
 - [ ] **...**

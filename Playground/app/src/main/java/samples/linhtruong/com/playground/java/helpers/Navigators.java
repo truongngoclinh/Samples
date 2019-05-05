@@ -2,6 +2,7 @@ package samples.linhtruong.com.playground.java.helpers;
 
 import android.app.Activity;
 import android.content.Intent;
+import samples.linhtruong.com.playground.java.custom_views.FanControllerActivity;
 import samples.linhtruong.com.playground.java.google_arch.test.DataBindingActivity;
 import samples.linhtruong.com.playground.java.google_arch.test.databinding_profile_sample.view.ProfileActivity;
 import samples.linhtruong.com.playground.java.google_arch.test.livedata_test.FruitsActivity;
@@ -44,5 +45,9 @@ public class Navigators {
 
     public static void navigateLiveDataServiceTestActivity(Activity activity) {
         activity.startActivity(new Intent(activity, LiveDataActivityTest.class));
+    }
+
+    public static void navigateCustomViewTestAcitivyt(Activity activity) {
+        activity.startActivity(new Intent(activity, FanControllerActivity.class));
     }
 }
