@@ -1,4 +1,4 @@
-package news.agoda.com.sample.explore
+package com.linhtruong.sample
 
 import com.linhtruong.sample.core.exception.Failure
 import com.linhtruong.sample.core.helper.NetworkHelper
@@ -8,7 +8,6 @@ import com.linhtruong.sample.explore.model.NewsResponse
 import com.linhtruong.sample.explore.repo.MainRepository
 import com.nhaarman.mockitokotlin2.given
 import io.reactivex.Observable
-import news.agoda.com.sample.UnitTest
 import org.amshove.kluent.*
 import org.junit.Before
 import org.junit.Test

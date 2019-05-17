@@ -1,4 +1,4 @@
-package news.agoda.com.sample
+package com.linhtruong.sample
 
 import org.junit.Rule
 import org.junit.runner.RunWith

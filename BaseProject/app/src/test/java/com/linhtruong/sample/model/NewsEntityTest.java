@@ -1,15 +1,14 @@
-package news.agoda.com.sample.explore.model;
+package com.linhtruong.sample.model;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 import com.linhtruong.sample.core.network.adapter.NullAsEmptyStringAdapter;
 import com.linhtruong.sample.explore.model.NewsEntity;
-import news.agoda.com.sample.ResourcesHelper;
-import news.agoda.com.sample.UnitTest;
+import com.linhtruong.sample.ResourcesHelper;
+import com.linhtruong.sample.UnitTest;
 import org.junit.Before;
 import org.junit.Test;
-import org.mockito.MockitoAnnotations;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;

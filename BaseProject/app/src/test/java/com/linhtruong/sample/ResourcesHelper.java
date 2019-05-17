@@ -1,4 +1,4 @@
-package news.agoda.com.sample;
+package com.linhtruong.sample;
 
 import java.io.IOException;
 import java.io.InputStream;

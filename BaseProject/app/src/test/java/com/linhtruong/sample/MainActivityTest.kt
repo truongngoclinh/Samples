@@ -1,11 +1,7 @@
-package news.agoda.com.sample
+package com.linhtruong.sample
 
 import com.linhtruong.sample.explore.MainActivity
 import com.linhtruong.sample.explore.NewsListFragment
-import org.amshove.kluent.shouldNotBe
-import org.junit.Before
-import org.junit.Test
-import org.robolectric.Robolectric
 import org.robolectric.android.controller.ActivityController
 
 

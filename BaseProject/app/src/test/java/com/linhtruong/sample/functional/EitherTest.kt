@@ -1,7 +1,7 @@
-package news.agoda.com.sample.core.functional
+package com.linhtruong.sample.functional
 
 import com.linhtruong.sample.core.functional.Either
-import news.agoda.com.sample.UnitTest
+import com.linhtruong.sample.UnitTest
 import org.amshove.kluent.shouldBe
 import org.amshove.kluent.shouldBeInstanceOf
 import org.amshove.kluent.shouldEqual

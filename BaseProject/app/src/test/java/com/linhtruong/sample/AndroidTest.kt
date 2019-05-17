@@ -1,8 +1,7 @@
-package news.agoda.com.sample
+package com.linhtruong.sample
 
 import android.app.Application
 import android.content.Context
-import com.linhtruong.sample.BuildConfig
 import com.linhtruong.sample.core.platform.base.BaseActivity
 import com.nhaarman.mockitokotlin2.mock
 import org.junit.Rule
