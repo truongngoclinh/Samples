@@ -3,7 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <include layout="@layout/activity_base_toolbar" />
+    <include
+        layout="@layout/activity_base_toolbar"
+        android:visibility="gone" />
 
     <FrameLayout
         android:id="@+id/container"
