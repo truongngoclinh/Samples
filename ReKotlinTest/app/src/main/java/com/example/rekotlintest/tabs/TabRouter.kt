@@ -13,21 +13,21 @@ import org.kodein.di.generic.singleton
 import org.rekotlinrouter.*
 import timber.log.Timber
 
-private fun tabRouterPrivateBindings(rootView: ViewGroup) = Kodein.Module(name = "TabRouterModule") {
+private fun tabRouterPrivateBindings(rootView: ViewGroup, patentKodein: Kodein) = Kodein.Module(name = "TabRouterModule") {
     val tabContent = "tabContent"
 
     bind<TabNavigationBar>() with singleton { TabNavigationBar(rootView, instance()) }
     bind<TabHost>() with singleton { TabHost(rootView) }
     bind<ViewGroup>(tabContent) with singleton { instance<TabHost>().contentView }
 
-    bind<TopRateRouter>() with singleton { TopRateRouter(instance(tabContent), instance()) }
-    bind<FavoriteRouter>() with singleton { FavoriteRouter(instance(tabContent), instance()) }
+    bind<TopRateRouter>() with singleton { TopRateRouter(instance(tabContent), patentKodein) }
+    bind<FavoriteRouter>() with singleton { FavoriteRouter(instance(tabContent), patentKodein) }
 }
 
 class TabRouter(
     rootView: ViewGroup,
     patentKodein: Kodein,
-    privateBindings: Kodein.Module = tabRouterPrivateBindings(rootView)
+    privateBindings: Kodein.Module = tabRouterPrivateBindings(rootView, patentKodein)
 ) : RouterWithKodein(rootView, patentKodein, privateBindings) {
     companion object {
         const val TOP_RATE: RouteElementIdentifier = "top_rate"
@@ -51,7 +51,7 @@ class TabRouter(
         animated: Boolean,
         completionHandler: RoutingCompletionHandler
     ): Routable {
-        Timber.d("pushRouteSegment: $routeElementIdentifier")
+        Timber.i("pushRouteSegment: $routeElementIdentifier")
         return routeTo(routeElementIdentifier)
     }
 
@@ -60,7 +60,7 @@ class TabRouter(
         animated: Boolean,
         completionHandler: RoutingCompletionHandler
     ) {
-        Timber.d("popRouteSegment: $routeElementIdentifier")
+        Timber.i("popRouteSegment: $routeElementIdentifier")
     }
 
     override fun changeRouteSegment(
@@ -69,7 +69,7 @@ class TabRouter(
         animated: Boolean,
         completionHandler: RoutingCompletionHandler
     ): Routable {
-        Timber.d("changeRouteSegment: from: $from to: $to")
+        Timber.i("changeRouteSegment: from: $from to: $to")
         return routeTo(to)
     }
 

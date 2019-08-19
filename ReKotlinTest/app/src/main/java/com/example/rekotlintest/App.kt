@@ -1,6 +1,7 @@
 package com.example.rekotlintest
 
 import android.app.Application
+import android.content.Context
 import com.example.rekotlintest.AppReducer.Companion.appReducer
 import com.example.rekotlintest.core.RootRoutable
 import com.example.rekotlintest.core.createThunkMiddleware
@@ -78,6 +79,9 @@ class App : Application(), KodeinAware {
             instance<Retrofit>().create(AppService::class.java)
         }
 
+        bind<Moshi>() with singleton {
+            Moshi.Builder().build()
+        }
         bind<App>() with singleton { this@App }
         bind<Store<AppState>>() with singleton { appStore }
         bind<DispatchFunction>() with singleton { appStore.dispatchFunction }

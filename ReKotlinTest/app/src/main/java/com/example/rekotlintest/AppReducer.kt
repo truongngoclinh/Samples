@@ -24,7 +24,8 @@ class AppReducer {
             )
 
             return state.copy(
-                navigationState = (::navigationReducer)(action, state.navigationState),
+                    navigationState = NavigationReducer.reduce(action, state.navigationState),
+//                navigationState = (::navigationReducer)(action, state.navigationState),
                 activityState = (::activityLifecycleReducer)(action, state.activityState),
                 topRateState = (::topRateReducer)(action, state.topRateState),
                 favoriteState = (::favoriteReducer)(action, state.favoriteState)

@@ -27,10 +27,9 @@ import timber.log.Timber
 
 class MainActivity : BaseActivity(), KodeinAware, StoreSubscriber<TopRateState> {
     override val kodein by subKodein(kodein()) {
-        bind<Context>() with provider {
+        bind<Context>("ActivityContext") with provider {
             this@MainActivity
         }
-
         bind<TopRateAction.LoadTopRateMovies>() with provider {
             TopRateAction.LoadTopRateMovies(instance(), instance(), instance())
         }

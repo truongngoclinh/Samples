@@ -21,6 +21,7 @@ import org.rekotlin.BlockSubscriber
 import org.rekotlin.DispatchFunction
 import org.rekotlin.Store
 import org.rekotlin.StoreSubscriber
+import org.rekotlinrouter.SetRouteAction
 import org.rekotlinrouter.SetRouteSpecificData
 import timber.log.Timber
 
@@ -29,7 +30,6 @@ class TopRateRoot(val parent: ViewGroup, override val kodein: Kodein) : ViewComp
     override val view: ViewGroup = parent.inflate(R.layout.fragment_tab_top_rate)
     private val context: Context by instance()
     private val store: Store<AppState> by instance()
-    private val dispatch: DispatchFunction by instance()
 
     private val listView: RecyclerView by lazy { view.findViewById<RecyclerView>(R.id.lstTopRate) }
     private lateinit var adapter: TopRateAdapter
@@ -46,7 +46,8 @@ class TopRateRoot(val parent: ViewGroup, override val kodein: Kodein) : ViewComp
         adapter = TopRateAdapter(object : ItemInteractor<Movie> {
             override fun onItemClick(data: Movie) {
                 Timber.d("onClick: $data")
-                dispatch(SetRouteSpecificData(arrayListOf(AppConst.DETAIL_ACTIVITY), data))
+                store.dispatch(SetRouteAction(arrayListOf(TopRateRouter.TOP_RATE_ROOT_CONTENT, AppConst.DETAIL_ACTIVITY)))
+                store.dispatch(SetRouteSpecificData(arrayListOf(TopRateRouter.TOP_RATE_ROOT_CONTENT, AppConst.DETAIL_ACTIVITY), data))
             }
         })
         listView.apply {
