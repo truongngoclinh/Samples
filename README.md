@@ -140,7 +140,7 @@ I will manage to update as much as possible in my spare time.
 - [x] **Redux for Android: ReKotlin, ReKotlin-Router, Kodein, SQLDelight, Couroutine**
   + `path: ReKotlinTest`
  
-- [x] **Coroutine**
-  + `path: [`CoroutineTest`](https://github.com/svmc-legacy-dev-addict/kotlin-coroutine-basic)
+- [x] **Kotlin Coroutine**
+  + `path:` [`CoroutineTest`](https://github.com/svmc-legacy-dev-addict/kotlin-coroutine-basic)
 
 - [ ] **...**
