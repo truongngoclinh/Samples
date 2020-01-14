@@ -3,8 +3,9 @@ package samples.linhtruong.com.app;
 import android.app.Activity;
 import android.os.Bundle;
 
-import android.support.annotation.Nullable;
 import android.view.View;
+
+import androidx.annotation.Nullable;
 
 import org.androidannotations.annotations.EActivity;
 

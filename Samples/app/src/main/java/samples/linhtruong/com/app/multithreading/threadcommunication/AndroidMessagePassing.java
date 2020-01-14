@@ -5,18 +5,21 @@ import android.os.Looper;
 import android.os.Message;
 import android.os.MessageQueue;
 import android.os.SystemClock;
-import android.support.annotation.NonNull;
 import android.util.Log;
 import android.util.LogPrinter;
+
+import androidx.annotation.NonNull;
+
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;
-import samples.linhtruong.com.app.R;
-import samples.linhtruong.com.base.BaseActivity;
 
 import java.util.Random;
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicInteger;
+
+import samples.linhtruong.com.app.R;
+import samples.linhtruong.com.base.BaseActivity;
 
 /**
  * Simple sample about android message passing mechanisms using

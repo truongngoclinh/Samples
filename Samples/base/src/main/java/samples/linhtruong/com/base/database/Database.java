@@ -17,13 +17,14 @@ public abstract class Database {
 
     public Database(Context context) {
         mContext = context;
+        Realm.init(mContext);
     }
 
     public Realm getInstance() {
         if (mConfig != null) {
             synchronized (this) {
                 if (mConfig != null) {
-                    mConfig = new RealmConfiguration.Builder(mContext)
+                    mConfig = new RealmConfiguration.Builder()
                             .name(getName())
                             .schemaVersion(getSchemaVersion())
                             .modules(getModule())

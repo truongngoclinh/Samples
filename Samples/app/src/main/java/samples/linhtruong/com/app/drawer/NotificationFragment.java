@@ -1,11 +1,12 @@
 package samples.linhtruong.com.app.drawer;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+
+import androidx.annotation.Nullable;
 
 import samples.linhtruong.com.app.R;
 import samples.linhtruong.com.base.BaseFragment;

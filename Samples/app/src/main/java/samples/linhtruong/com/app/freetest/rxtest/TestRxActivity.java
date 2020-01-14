@@ -2,22 +2,24 @@ package samples.linhtruong.com.app.freetest.rxtest;
 
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.util.Log;
 import android.widget.Button;
+
+import androidx.annotation.Nullable;
 
 import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ViewById;
 
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import rx.Observable;
 import rx.Observer;
 import rx.Scheduler;
 import rx.Subscriber;
-import rx.functions.Action1;
-import rx.functions.Func1;
-import rx.functions.Func2;
 import rx.internal.schedulers.NewThreadWorker;
 import rx.internal.util.RxThreadFactory;
 import rx.schedulers.Schedulers;
@@ -25,16 +27,6 @@ import rx.subjects.PublishSubject;
 import samples.linhtruong.com.app.R;
 import samples.linhtruong.com.base.BaseActivity;
 import samples.linhtruong.com.utils.LogUtils;
-
-import java.math.BigInteger;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.Random;
-import java.util.concurrent.TimeUnit;
 
 /**
  * Created by Truong on 9/26/16 - 20:05.

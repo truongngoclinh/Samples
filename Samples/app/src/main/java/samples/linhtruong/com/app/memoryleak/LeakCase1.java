@@ -2,7 +2,8 @@ package samples.linhtruong.com.app.memoryleak;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+
+import androidx.annotation.Nullable;
 
 import java.lang.ref.WeakReference;
 

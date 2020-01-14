@@ -1,9 +1,10 @@
 package samples.linhtruong.com.app.tabs.utils;
 
 import android.content.Context;
-import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
+
+import androidx.viewpager.widget.ViewPager;
 
 /**
  * Created by linhtruong on 12/2/16 - 15:28.
