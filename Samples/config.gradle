@@ -2,28 +2,28 @@ ext.versions = [
         code              : 1,
         name              : '1.0',
         minSdk            : 16,
-        targetSdk         : 24,
-        compileSdk        : 24,
-        buildTools        : '23.0.2',
+        targetSdk         : 28,
+        compileSdk        : 28,
+        buildTools        : '28.0.3',
 
         // android
-        supportLibs       : '24.2.1',
+        supportLibs       : '28.0.0',
 
         // 3rd
         wire              : '2.1.2',
         dagger            : '2.4',
         javaxAnnotations  : '1.2',
-        androidAnnotations: '4.1.0',
+        androidAnnotations: '4.6.0',
         rxJava            : '1.1.8',
         rxAndroid         : '1.2.0',
         retrofit          : '2.0.2',
         okHttp            : '3.2.0',
-        realm             : '1.1.1',
+        realm             : '7.0.0-beta-SNAPSHOT',
         gson              : '2.6.2',
         materialDialog    : '0.8.5.9@aar',
         robotoTextView    : '2.5.0',
         facebook          : '4.+',
-        firebaseMessaging : '9.6.0',
+        firebaseMessaging : '19.0.0',
         glide             : '3.7.0',
         picasso           : '2.5.2'
 ]
@@ -56,6 +56,7 @@ ext.libraries = [
         robotoTextView          : "com.github.johnkil.android-robototextview:robototextview:$versions.robotoTextView",
         facebook                : "com.facebook.android:facebook-android-sdk:$versions.facebook",
         firebaseMessaging       : "com.google.firebase:firebase-messaging:$versions.firebaseMessaging",
+        firebaseAppIndexing     : "com.google.firebase:firebase-appindexing:$versions.firebaseMessaging",
         glide                   : "com.github.bumptech.glide:glide:$versions.glide",
         picasso                 : "com.squareup.picasso:picasso:$versions.picasso"
 ]

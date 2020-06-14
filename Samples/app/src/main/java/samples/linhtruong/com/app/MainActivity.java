@@ -3,8 +3,9 @@ package samples.linhtruong.com.app;
 import android.app.Activity;
 import android.os.Bundle;
 
-import android.support.annotation.Nullable;
 import android.view.View;
+
+import androidx.annotation.Nullable;
 
 import org.androidannotations.annotations.EActivity;
 
@@ -12,6 +13,7 @@ import samples.linhtruong.com.app.drawer.DrawerActivity_;
 import samples.linhtruong.com.app.eventbus.TestNotificationAtivity_;
 import samples.linhtruong.com.app.facebook.FacebookShareActivity_;
 import samples.linhtruong.com.app.fcm.activity.FirebaseTestActivity_;
+import samples.linhtruong.com.app.freetest.SOTestActivity_;
 import samples.linhtruong.com.app.freetest.rxtest.TestRxActivity_;
 import samples.linhtruong.com.app.freetest.rxtest.TestRxComponentsActivity_;
 import samples.linhtruong.com.app.freetest.rxtest.TestRxDownloadFileActivity_;
@@ -40,6 +42,13 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onClick(View view) {
                 TestRxActivity_.intent(activity).start();
+            }
+        });
+
+        findViewById(R.id.soActivity).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SOTestActivity_.intent(activity).start();
             }
         });
 

@@ -1,6 +1,6 @@
 package samples.linhtruong.com.base;
 
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 
 /**
  * Created by Truong on 9/26/16 - 14:02.

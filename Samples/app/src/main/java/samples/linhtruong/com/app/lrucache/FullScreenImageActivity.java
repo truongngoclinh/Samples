@@ -1,15 +1,14 @@
 package samples.linhtruong.com.app.lrucache;
 
 import android.content.Context;
-import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.util.Log;
 import android.widget.ImageView;
 
+import androidx.annotation.Nullable;
+
 import org.androidannotations.annotations.EActivity;
-import org.androidannotations.annotations.Extra;
 import org.androidannotations.annotations.ViewById;
 
 import samples.linhtruong.com.app.R;
@@ -24,7 +23,7 @@ import samples.linhtruong.com.base.BaseActivity;
  */
 
 @EActivity
-public class FullScreenImageActivity  extends BaseActivity {
+public class FullScreenImageActivity extends BaseActivity {
 
     private static final String TAG = "FullScreenImageActivity";
     public static final String EXTRA_URL = "extra_url";

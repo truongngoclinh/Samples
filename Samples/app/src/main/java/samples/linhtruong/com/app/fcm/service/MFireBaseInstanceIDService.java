@@ -2,11 +2,12 @@ package samples.linhtruong.com.app.fcm.service;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
 
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
+
 import com.google.firebase.iid.FirebaseInstanceId;
-import com.google.firebase.iid.FirebaseInstanceIdService;
+import com.google.firebase.messaging.FirebaseMessagingService;
 
 import samples.linhtruong.com.app.fcm.app.Config;
 
@@ -18,13 +19,13 @@ import samples.linhtruong.com.app.fcm.app.Config;
  * @organization VED
  */
 
-public class MFirebaseInstanceIDService extends FirebaseInstanceIdService {
+public class MFirebaseInstanceIDService extends FirebaseMessagingService {
 
     private static final String TAG = "MFirebaseInstanceIDServ";
 
     @Override
-    public void onTokenRefresh() {
-        super.onTokenRefresh();
+    public void onNewToken(String s) {
+        super.onNewToken(s);
 
         String refreshToken = FirebaseInstanceId.getInstance().getToken();
         storeRegIdInPref(refreshToken);
@@ -32,7 +33,8 @@ public class MFirebaseInstanceIDService extends FirebaseInstanceIdService {
         sendRegistrationToServer(refreshToken);
 
         Intent registrationComplete = new Intent(Config.REGISTRATION_COMPLETE);
-        registrationComplete.putExtra(Config.TOKEN, refreshToken);onDestroy();
+        registrationComplete.putExtra(Config.TOKEN, refreshToken);
+        onDestroy();
         LocalBroadcastManager.getInstance(this).sendBroadcast(registrationComplete);
     }
 

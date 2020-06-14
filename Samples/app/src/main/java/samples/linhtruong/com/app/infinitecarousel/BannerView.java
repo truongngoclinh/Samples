@@ -1,10 +1,11 @@
 package samples.linhtruong.com.app.infinitecarousel;
 
 import android.content.Context;
-import android.support.v4.view.ViewPager;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
+
+import androidx.viewpager.widget.ViewPager;
 
 import java.util.ArrayList;
 import java.util.List;

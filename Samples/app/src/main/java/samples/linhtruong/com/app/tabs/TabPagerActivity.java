@@ -2,17 +2,19 @@ package samples.linhtruong.com.app.tabs;
 
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.annotation.RequiresApi;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
+
+import com.google.android.material.tabs.TabLayout;
 
 import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ViewById;
@@ -111,7 +113,7 @@ public class TabPagerActivity extends FragmentActivity {
         }
     }
 
-     private View getIndicator(String title, int res) {
+    private View getIndicator(String title, int res) {
         View v = LayoutInflater.from(this).inflate(R.layout.activity_tabhost_indicator, null);
         ImageView img = (ImageView) v.findViewById(R.id.image);
         TextView txt = (TextView) v.findViewById(R.id.txtView);

@@ -1,5 +1,4 @@
 apply plugin: 'com.android.application'
-apply plugin: 'android-apt'
 
 android {
     compileSdkVersion versions.compileSdk
@@ -11,8 +10,6 @@ android {
         targetSdkVersion versions.targetSdk
         versionCode versions.code
         versionName versions.name
-
-        multiDexEnabled true
     }
 
     buildTypes {
@@ -29,37 +26,36 @@ android {
     }
 
     sourceSets { main { res.srcDirs = ['src/main/res', 'src/main/res/menu'] } }
-    buildToolsVersion '25.0.0'
 }
 
 dependencies {
-    compile project(path: ':base')
-    compile project(path: ':utils')
-    compile project(path: ':database')
+    implementation project(path: ':base')
+    implementation project(path: ':utils')
+    implementation project(path: ':database')
 
-    compile libraries.supportDesign
-    compile libraries.supportAppCompat
+    implementation libraries.supportDesign
+    implementation libraries.supportAppCompat
 
-    apt libraries.androidAnnotations
-    compile libraries.androidAnnotationsApi
+    annotationProcessor libraries.androidAnnotations
+    implementation libraries.androidAnnotationsApi
 
-    apt libraries.daggerCompiler
-    compile libraries.dagger
+    annotationProcessor libraries.daggerCompiler
+    implementation libraries.dagger
 
-    compile libraries.okHttp
-    compile libraries.rxJava
-    compile libraries.rxAndroid
-    compile libraries.retrofit
-    compile libraries.retrofitGsonConverter
-    compile libraries.facebook
+    implementation libraries.okHttp
+    implementation libraries.rxJava
+    implementation libraries.rxAndroid
+    implementation libraries.retrofit
+    implementation libraries.retrofitGsonConverter
+    implementation libraries.facebook
 
-    compile libraries.firebaseMessaging
+    implementation libraries.firebaseMessaging
 
-    compile libraries.glide
-    compile libraries.support
+    implementation libraries.glide
+    implementation libraries.support
 
-    compile libraries.picasso
-    compile 'com.google.android.gms:play-services-appindexing:9.6.0'
+    implementation libraries.picasso
+    implementation libraries.firebaseAppIndexing
 }
 
 apply plugin: 'com.google.gms.google-services'

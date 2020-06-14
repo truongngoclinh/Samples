@@ -29,6 +29,10 @@ I will manage to update as much as possible in my spare time.
   + `path: Samples/app/src/main/java/samples/linhtruong/com/app/tabs`
   + `ref:`[`Androidhive`](http://www.androidhive.info/2015/09/android-material-design-working-with-tabs/)
   + `custom tabs view` [`Tabs custom`](https://github.com/truongngoclinh/android_dagger2_sample)
+
+- [ ] **Tabs with BottomNavigationView**
+  + `path: `
+  + `ref: `
   
 - [x] **Integrate Facebook: FacebookSdk, Graph API**
   + `path: Samples/app/src/main/java/samples/linhtruong/com/app/facebook`
@@ -136,5 +140,19 @@ I will manage to update as much as possible in my spare time.
   + `path: samples/linhtruong/com/playground/java/custom_views/`
   + `ref` [`Google Advanced Codelab`](https://codelabs.developers.google.com/codelabs/advanced-android-training-custom-view-from-scratch/)
   + `performance problem`
+  
+- [x] **Redux for Android: ReKotlin, ReKotlin-Router, Kodein, SQLDelight, Couroutine**
+  + `path: ReKotlinTest`
+ 
+- [x] **Kotlin Coroutine**
+  + `path:` [`CoroutineTest`](https://github.com/svmc-legacy-dev-addict/kotlin-coroutine-basic)
+
+- [ ] **Add Text Watermask to Bitmap**
+  + `path: `
+  + `ref: `
+
+- [ ] **SpotLight tutorial**
+  + `path: `
+  + `ref: `
 
 - [ ] **...**

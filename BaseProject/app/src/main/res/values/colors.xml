@@ -3,5 +3,9 @@
     <color name="primary">#EEEEEE</color>
     <color name="black">#000000</color>
     <color name="divider">#42090E2B</color>
+    <color name="primary_button_disabled">#40488cf1</color>
+    <color name="primary_button_normal">#488cf1</color>
+    <color name="app_primary_color_highlight">#80488CF1</color>
+
 
 </resources>

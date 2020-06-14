@@ -2,27 +2,23 @@ package samples.linhtruong.com.app.freetest.rxtest;
 
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.util.Log;
 import android.widget.Button;
+
+import androidx.annotation.Nullable;
 
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.appindexing.Thing;
 import com.google.android.gms.common.api.GoogleApiClient;
+
 import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ViewById;
 
 import rx.Observable;
-import rx.Observer;
 import rx.Subscriber;
 import rx.Subscription;
-import rx.android.schedulers.AndroidSchedulers;
-import rx.observers.Observers;
-import rx.schedulers.Schedulers;
 import samples.linhtruong.com.app.R;
-import samples.linhtruong.com.app.facebook.retrofit.FeedResponse;
 import samples.linhtruong.com.base.BaseActivity;
 import samples.linhtruong.com.utils.LogUtils;
 
