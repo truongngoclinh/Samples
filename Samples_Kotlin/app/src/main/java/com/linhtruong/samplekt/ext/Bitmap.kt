@@ -6,6 +6,8 @@ import android.widget.TextView
 fun Bitmap.addWatermaskText(text: String, options: WatermaskOptions) {
     val bitmap = copy(config, true)
     val canvas = Canvas(bitmap)
+    val paint = Paint(Paint.ANTI_ALIAS_FLAG)
+    canvas.drawText()
 
 }
 
